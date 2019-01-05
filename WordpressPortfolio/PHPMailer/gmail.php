@@ -15,7 +15,7 @@ require 'src/PHPMailer.php';
 require 'src/SMTP.php';
 require 'src/Exception.php';
 
-$mail = new PHPMailer();
+$mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->Encoding = 'base64';
 $mail->isSMTP();
