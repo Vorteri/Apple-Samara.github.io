@@ -22,7 +22,7 @@ $mail->isSMTP();
 $mail->SMTPDebug = 0;
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
-$mail->SMTPSecure = 'tls';
+$mail->SMTPSecure = 'ssl';
 $mail->SMTPAuth = true;
 $mail->isHTML(true);
 $mail->Username = "wordpresshelpme1@gmail.com";
