@@ -1,0 +1,39 @@
+.clients-block__title
+	text-align: center
+	padding-bottom: 60px
+	padding-top: 90px
+	font-size: 27px
+	font-weight: 700
+	line-height: 18px
+	color: $text-color-dark
+	text-transform: uppercase
+	&::after
+		content: ''
+		margin-top: 12px
+		display: block
+		height: 6px
+		background: url(../img/products/wavy-line.png) center no-repeat
+.clients-block
+	&__img
+		width: 215px
+		height: 133px
+		margin-right: 33px
+		margin-bottom: 33px
+		padding: 16px 32px
+		border: 1px solid grey
+		border-radius: 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		filter: grayscale(100%)
+	&__img:hover
+		filter: none
+.clients-block
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	padding-bottom: 40px
+.clients-block__img img
+	max-height: 95px
+	max-width: 130px 
