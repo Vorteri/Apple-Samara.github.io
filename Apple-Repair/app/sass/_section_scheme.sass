@@ -1,0 +1,112 @@
+.scheme
+ position: relative
+ background: url(../img/scheme/scheme-bg.png) no-repeat
+ background-size: cover
+ text-align: center
+ z-index: 0
+ padding-bottom: 70px
+ &:after
+		content: ''
+	 display: block
+	 position: absolute
+	 top: 0
+	 left: 0
+	 height: 100%
+	 width: 100%
+	 z-index: -1
+	 background: rgb(194,233,239)
+	 background: linear-gradient(90deg, rgba(194,233,239, 0.9) 30%, rgba(228,210,237, 0.9) 80%)
+	&_title
+		padding-top: 50px
+	&-items
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		margin-top: 40px
+	 &_all
+	  display: inline-flex
+	  position: relative
+		 flex-flow: column wrap
+		 align-items: center
+		 width: 165.2px
+ 		margin-right: 40px
+   &:last-child
+ 	  margin-right: 0px
+ 	&_img
+ 	  position: relative
+			 background-color: #3fc7db;
+			 padding: 35px;
+			 border-radius: 50%;
+				img
+				 width: 50px
+				 height: 50px
+.scheme-items:not(:last-child) .scheme-items__transfer .scheme-items_all:nth-child(3) .scheme-items_img img
+ transform: translateX(4px)
+.scheme-items:not(:last-child) .scheme-items_all:nth-child(3) .scheme-items_img img
+	transform: translateX(-5px)
+.scheme-items_descr,  .scheme_center-text
+  color: $text-dark
+  font-size: 15px
+  font-weight: 300
+  line-height: 21px
+  margin-top: 20px
+.scheme_center-text
+ font-size: 20px
+ margin-top: 5px
+ margin-bottom: 25px
+.scheme-items:last-child .scheme-items_all .scheme-items_img
+ margin-top: 5px
+ background-color: #ffa14b
+
+.scheme-items_stick, 
+.scheme-items_stick-reverse
+ position: absolute
+ left: 105px
+ top: 40%
+ margin: 0 auto
+ z-index: 9
+ width: 118px
+ height: 50px
+ background-color: transparent
+ border-radius: 100%
+ border-top: 1px solid white
+ border-right: 1px solid transparent
+ border-left: 1px solid transparent
+.scheme-items_stick-reverse
+ top: 20%
+	border-top: none
+	border-bottom: 1px solid white
+
+.scheme-items .scheme-items_all .scheme-items_img .scheme-items_stick:after, 
+.scheme-items_stick-reverse:after
+ content: ""
+ background-color: #ffa14b
+ position: absolute
+ z-index: 10
+ top: 7px
+ left: 6px
+ width: 8px
+ height: 8px
+ border-radius: 50%
+.scheme-items:last-child .scheme-items_all .scheme-items_img .scheme-items_stick:after, 
+.scheme-items:last-child .scheme-items_stick-reverse:after
+ background-color: $line-blue
+.scheme-items_stick-reverse:after
+ top: 35px
+
+.scheme-items .scheme-items_all .scheme-items_img .scheme-items_stick:before,
+.scheme-items_stick-reverse:before
+ content: ""
+ background-color: #ffa14b
+ position: absolute
+ z-index: 10
+ top: 6px
+ right: 8px
+ width: 8px
+ height: 8px
+ border-radius: 50%
+.scheme-items:last-child .scheme-items_all .scheme-items_img .scheme-items_stick:before, 
+.scheme-items:last-child .scheme-items_stick-reverse:before
+ background-color: $line-blue
+.scheme-items_stick-reverse:before
+ top: 35px 

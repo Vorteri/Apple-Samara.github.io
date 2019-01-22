@@ -1,0 +1,49 @@
+.feedback
+	margin-top: 10px
+	margin-bottom: 10px
+	&_text
+		font-size: 18px
+		color: #464646
+		font-weight: 300
+		line-height: 22px
+.feedback-wrapper
+	@include flex
+	&_img::after
+		content: ""
+		display: inline-flex
+		margin-left: 15px
+		width: 1px
+		height: 64px
+		background-color: #17426a
+	&_contacts
+		display: inline-flex
+		p:first-child
+			font-size: 12px
+			font-weight: 400
+			line-height: 24px
+			margin-bottom: -2px 
+			color: #2a2a2a
+		p:last-child
+			font-size: 21px
+			font-weight: 500
+			color: #464646
+	&_numb
+		display: inline-flex
+		p:first-child
+			font-size: 12px
+			font-weight: 400
+			line-height: 24px
+			margin-bottom: -2px
+			color: #2a2a2a
+		p:last-child
+			font-size: 21px
+			font-weight: 500
+			color: #464646
+	&_btn
+		background-color: $btn-blue
+.fa-mobile-alt, 
+.fa-map-marker-alt
+	margin-top: 5px 
+ margin-right: 8px
+ color: #3fc7db
+	font-size: 38px

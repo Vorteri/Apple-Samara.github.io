@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<title>Apple Samara</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libs/timepicker/jquery.timepicker.css">
+</head>
+<body>
+	<header>
+		<nav class="nav-top">
+			<div class="container">
+			<ul class="nav-top__wrapper">
+				<li><a class="logo" href="#"><img src="img/logo.png" alt="apple"></a></li>
+				<li><a class="nav-top__list" href="#master">Вызов мастера</a></li>
+				<li><a class="nav-top__list" href="#price">Цены на ремонт</a></li>
+				<li><a class="nav-top__list" href="#advantage">Наши преимущества</a></li>
+				<li><a class="nav-top__list" href="#scheme-work">Схема работы</a></li>
+				<li><a class="nav-top__list" href="#review">Отзывы клиентов</a></li>
+				<li><a class="nav-top__list" href="#example">Примеры работ</a></li>
+				<li><a class="nav-top__list" href="#contacts">Контакты</a></li>
+			</ul>
+			</div>
+		</nav>
+
+				<a class="menu-link" href="#menu">
+					<span></span> 
+					</a>
+<div class="nav-top__mobile">
+						<ul>
+				<li><a class="logo" href="#"><img src="img/logo.png" alt="apple"></a></li>
+				<li><a class="nav-top__list" href="#master">Вызов мастера</a></li>
+				<li><a class="nav-top__list" href="#price">Цены на ремонт</a></li>
+				<li><a class="nav-top__list" href="#advantage">Наши преимущества</a></li>
+				<li><a class="nav-top__list" href="#scheme-work">Схема работы</a></li>
+				<li><a class="nav-top__list" href="#review">Отзывы клиентов</a></li>
+				<li><a class="nav-top__list" href="#example">Примеры работ</a></li>
+				<li><a class="nav-top__list" href="#contacts">Контакты</a></li>
+			</ul>
+</div>
+		<section class="feedback">
+			<div class="container">
+				<div class="feedback-wrapper">
+					<div class="feedback-wrapper_img">
+					<a href="#"><img class="logo" src="img/feedback/feedback-img.png" alt="advertising-img"></a>
+					</div>
+						<p class="feedback_text">Ремонт айфонов в сервисном<br>
+						центре и на выезде</p>
+					<div class="feedback-wrapper_contacts">
+						<i class="fas fa-map-marker-alt"></i>
+						<div class="feedback-work">
+						<p>Пн-пт с 10 до 20, сб,вс с 11 до 18</p>
+						<p>Ленинская, 301</p>
+						</div>
+					</div>
+					<div class="feedback-wrapper_numb">
+						<i class="fas fa-mobile-alt"></i>
+						<div class="feedback-numb">
+						<p>Звонки принимаються 24 часа</p>
+						<p>8 (846) 922 55 44</p>
+						</div>
+					</div>
+					<button class="feedback-wrapper_btn btn-short btn" type="submit">Заказать звонок!</button>
+				</div>
+			</div>
+			</section>
+
+
+<div class="overlay">
+<div class="popup popup__all">
+ <h4 class="popup__title">Заказать обратный звонок</h4>
+ <div class="popup-close"> &times;</div>
+<form class="popup-form" action="#">
+<label class="popup-form_one popup-form_all">
+<input class="popup-form_one" type="Text" placeholder="Ваше имя или ссылка Вк..." required>
+</label>
+<label class="popup-form_two popup-form_all">
+<input class="popup-form_two" type="Text" id="numb7" placeholder="Ваш номер телефона..." required>
+</label>
+<div class="popup-time__items">
+<p class="popup-time__title">удобное время для звонка:</p>
+<p class="popup-time__text">с</p><input class="popup-time" type="text" id="from" value="9:00">
+<p class="popup-time__text">до</p><input class="popup-time" type="text" id="to" value="20:00">
+</div>
+<button class="popup__btn btn-short">Оставить заявку!</button>
+</form>
+</div>
+</div>
+			
+
+
+<div class="overlay__two">
+<div class="popup__two popup__all">
+ <h4 class="popup__title">Заявка на диагностику без очереди</h4>
+ <div class="popup-close"> &times;</div>
+<form class="popup-form" action="#">
+<label class="popup-form_one popup-form_all">
+<input class="popup-form_one" type="Text" placeholder="Ваше имя или ссылка Вк..." required>
+</label>
+<label class="popup-form_two popup-form_all">
+<input class="popup-form_two" type="Text" id="numb1" placeholder="Ваш номер телефона..." required>
+</label>
+<button class="popup__btn btn-short">Отправить!</button>
+</form>
+</div>
+</div>
+
+			<section class="main"> 
+				<div class="container">
+					<div class="main-wrapper">
+					<div class="main-text">
+						<h1 class="main-text_title">Качественный ремонт<br></h1>
+						<h3 class="main-text_subtitle">iphone за 35 минут и гарантия 1 год</h3>
+						<div class="main-text_descr">
+							<p>Оставьте заявку на бесплатную диагностику без очереди,<br>
+и получите защитное стекло, стоимостью 1000 рублей,<br>
+с установкой в подарок!</p>
+						</div>
+						<button class="main-text_btn btn-short btn">Отправить заявку!</button>
+					</div>
+<div class="ba-slider">
+  <img src="img/main/after.png" alt="after">       
+  <div class="resize">
+    <img src="img/main/before.png" alt="before">
+  </div>
+  <div class="handle">
+  	<div class="handle-center">
+  		<div class="handle-arrow_left"><img src="img/main/left-arrow.png" alt="left-arrow"></div>
+  		<div class="handle-arrow_right"><img src="img/main/right-arrow.png" alt="right-arrow"></div>
+  	</div>
+  </div>
+</div> 
+				</div>
+				</div> 
+			</section>
+			</header>
+<main>
+		<section class="service">
+			<div class="container">
+			<h2 class="service_title all-title" id="master">Нет времени на ремонт?</h2>
+			<h4 class="service_subtitle">Наш мастер приедет в удобное время к вам офис/дом и<br>
+произведет ремонт при вас в течении 35 минут!</h4>
+			<div class="service_img"><img src="img/service/phone.png" alt="phone"></div>
+			<p class="service_text">Выезд мастера бесплатный!</p>
+			<div class="service_btn">
+			<button class="service-btn_one btn-long btn">Вызвать мастера сейчас!</button>
+			<button class="service-btn_two btn-long btn">Узнать стоимость ремонта</button>
+			</div>
+			</div>
+		</section>
+
+		<section class="price">
+			<div class="container">
+				<h2 class="price_title all-title" id='price'>Цены на ремонт Apple</h2>
+				<div class="price-btn">
+					<button class="price-btn_all price-btn_1">iPhone 4</button>
+					<button class="price-btn_all price-btn_2 active">iPhone 4s</button>
+					<button class="price-btn_all price-btn_3">iPhone 5</button>
+					<button class="price-btn_all price-btn-4">iPhone 5s</button>
+					<button class="price-btn_all price-btn_5">iPhone 5c</button>
+					<button class="price-btn_all price-btn_6">iPhone 6</button>
+					<button class="price-btn_all price-btn_7">iPhone 6s</button>
+					<button class="price-btn_all price-btn_8">iPhone 6s+</button>
+				</div>
+				<table class="price-table">
+					<thead>
+					<tr>
+					<td>Услуга</td>
+					<td>Время ремонта</td>
+					<td>Наши цены</td>
+					<td>Средняя цена по Самаре</td>
+					<td>Ваша экономия</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Замена дисплея (копия высокого качества)</td>
+					<td id="price-table_1">от 1 часа</td>
+					<td id="price-table_2">2 200&#8381;</td>
+					<td id="price-table_3">2 290&#8381; - 2 690&#8381;</td>
+					<td id="price-table_4">80-90%</td>
+				</tr>
+				<tr>
+					<td>Замена аккумулятора</td>
+					<td id="price-table_5">от 1 часа</td>
+					<td id="price-table_6">1 200 &#8381;</td>
+					<td id="price-table_7">1 400&#8381; - 1 500&#8381;</td>
+					<td id="price-table_8">30-40%</td>
+				</tr>
+				<tr>
+					<td>Замена задней крышки корпуса</td>
+					<td id="price-table_9">10 минут</td>
+					<td id="price-table_10">490&#8381;</td>
+					<td id="price-table_11">490&#8381; - 890&#8381;</td>
+					<td id="price-table_12">26-32%</td>
+					<tr>
+						<td>Прошивка</td>
+						<td id="price-table_13">от 1 часа</td>
+						<td id="price-table_14">500&#8381;</td>
+						<td id="price-table_15">770&#8381; - 820&#8381;</td>
+						<td id="price-table_16">31-46%</td>
+						<tr>
+							<td>Ремонт после удара</td>
+							<td id="price-table_17">от 1 дня</td>
+							<td id="price-table_18">от 900&#8381;</td>
+							<td id="price-table_19">1 290&#8381; - 1 690&#8381;</td>
+							<td id="price-table_20">80-90%</td>
+						</tr>
+						</tbody>
+				</table>
+				<div class="price-table_order">
+					<p>Заказать ремонт со скидкой</p>
+					<button class="price-table_order_btn btn">Заказать!</button>
+			</div>
+			<table class="price-table price-table_bottom">
+			<tbody>
+				<tr>
+					<td>Замена кнопки Home</td>
+					<td id="price-table_21">от 1 часа</td>
+					<td id="price-table_22">990&#8381;</td>
+					<td id="price-table_23">1 490&#8381; - 1 890&#8381;</td>
+					<td id="price-table_24">26-32%</td>
+				</tr>
+				<tr>
+					<td>Замена нижнего шлейфа</td>
+					<td id="price-table_25">от 2 часов</td>
+					<td id="price-table_26">990&#8381;</td>
+					<td id="price-table_27">1 770&#8381; - 1 820&#8381;</td>
+					<td id="price-table_28">30-40%</td>
+				</tr>
+				<tr>
+						<td>Замена верхнего динамика</td>
+						<td id="price-table_29">от 2 часов</td>
+						<td id="price-table_30">990&#8381;</td>
+						<td id="price-table_31">1 290&#8381; - 1 690&#8381;</td>
+						<td id="price-table_32">80-90%</td>
+						<tr>
+							<td>Замена задней камеры</td>
+							<td id="price-table_33">от 1 часа</td>
+							<td id="price-table_34">1 190&#8381;</td>
+							<td id="price-table_35">1 400&#8381; - 1 500&#8381;</td>
+							<td id="price-table_36">30-40%</td>
+						</tr>
+						<tr>
+							<td>Замена нижнего динамика</td>
+							<td id="price-table_37">от 1 часа</td>
+							<td id="price-table_38">990&#8381;</td>
+							<td id="price-table_39">1 490&#8381; - 1 890&#8381;</td>
+							<td id="price-table_40">26-32%</td>
+						</tr>
+						<tr>
+							<td>Замена верхнего шлейфа</td>
+							<td id="price-table_41">от 2 часа</td>
+							<td id="price-table_42">990&#8381;</td>
+							<td id="price-table_43">1 770&#8381; - 1 820&#8381;</td>
+							<td id="price-table_44">31-46%</td>
+						</tr>
+						<tr>
+							<td>Замена вибро</td>
+							<td id="price-table_45">1 час</td>
+							<td id="price-table_46">990&#8381;</td>
+							<td id="price-table_47">1 290&#8381; - 1 690&#8381;</td>
+							<td id="price-table_48">80-90%</td>
+						</tr>
+						<tr>
+							<td>Замена разъема для наушников</td>
+							<td id="price-table_49">&oline; &oline; &oline;</td>
+							<td id="price-table_50">990&#8381;</td>
+							<td id="price-table_51">1 400&#8381; - 1 500&#8381;</td>
+							<td id="price-table_52">30-40%</td>
+						</tr>
+						<tr>
+							<td>Замена микрофона</td>
+							<td id="price-table_53">&oline; &oline; &oline;</td>
+							<td id="price-table_54">990&#8381;</td>
+							<td id="price-table_55">1 490&#8381; - 1 890&#8381;</td>
+							<td id="price-table_56">26-32%</td>
+						</tr>
+				 	<tr>
+							<td>Замена контроллера</td>
+							<td id="price-table_57">&oline; &oline; &oline;</td>
+							<td id="price-table_58">2 990&#8381;</td>
+							<td id="price-table_59">3 770&#8381; - 3 820&#8381;</td>
+							<td id="price-table_60">31-46%</td>
+						</tr>
+						<tr>
+							<td>Замена усилителя полифонии</td>
+							<td id="price-table_61">&oline; &oline; &oline;</td>
+							<td id="price-table_62">2 990&#8381;</td>
+							<td id="price-table_63">3 290&#8381; - 3 690&#8381;</td>
+							<td id="price-table_64">80-90%</td>
+						</tr>
+						<tr>
+							<td>Замена кнопок громкости</td>
+							<td id="price-table_65">&oline; &oline; &oline;</td>
+							<td id="price-table_66">990&#8381;</td>
+							<td id="price-table_67">1 400&#8381; - 1 500&#8381;</td>
+							<td id="price-table_68">30-40%</td>
+						</tr>
+						<tr>
+							<td>Замена wi-fi антенны</td>
+							<td id="price-table_69">&oline; &oline; &oline;</td>
+							<td id="price-table_70">500&#8381;</td>
+							<td id="price-table_71">690&#8381; - 890&#8381;</td>
+							<td id="price-table_72">26-32%</td>
+						</tr>
+						<tr>
+							<td>Замена передней камеры</td>
+							<td id="price-table_73">&oline; &oline; &oline;</td>
+							<td id="price-table_74">1 190&#8381;</td>
+							<td id="price-table_75">1 770&#8381; - 1 820&#8381;</td>
+							<td id="price-table_76">31-46%</td>
+						</tr>
+						<tr>
+							<td>Замена микросхемы зарядки</td>
+							<td id="price-table_77">&oline; &oline; &oline;</td>
+							<td id="price-table_78">По запросу</td>
+							<td id="price-table_79">12 290&#8381; - 14 690&#8381;</td>
+							<td id="price-table_80">80-90%</td>
+						</tr>
+						<tr>
+							<td>Замена рамки(средней части)</td>
+							<td id="price-table_81">&oline; &oline; &oline;</td>
+							<td id="price-table_82">1 900&#8381;</td>
+							<td id="price-table_83">2 400&#8381; - 2 500&#8381;</td>
+							<td id="price-table_84">30-40%</td>
+						</tr>
+						<tr>
+							<td>Замена держателя sim</td>
+							<td id="price-table_85">&oline; &oline; &oline;</td>
+							<td id="price-table_86">300&#8381;</td>
+							<td id="price-table_87">1 490&#8381; - 1 890&#8381;</td>
+							<td id="price-table_88">26-32%</td>
+						</tr>
+						<tr>
+							<td>Замена датчика приближения</td>
+							<td id="price-table_89">&oline; &oline; &oline;</td>
+							<td id="price-table_90">990&#8381;</td>
+							<td id="price-table_91">1 770&#8381; - 1 820&#8381;</td>
+							<td id="price-table_92">31-46%</td>
+						</tr>
+						</tbody>
+			</table>
+	</div>
+<div class="price-order">
+   <h3 class="price-order_title">Не знаете что сломалось? Оставьте заявку, чтобы узнать стоимость и получить<br> бесплатную консультацию мастера</h3>
+   <button class="price-order_btn btn-short btn">Отправить заявку!</button>
+   </div>
+</section>
+		<section class="gift gift__discound-card">
+			<div class="container">
+				<h2 class="gift_title all-title">Оставьте заявку на ремонт и получите дисконтную карту<br> на ремонт и аксессуары</h2>
+				<form class="gift-form" action="#">
+					<label class="gift-form_one">
+					<input class="gift-form_one gift-form_all" type="Text" placeholder="Ваше имя или ссылка Вк...">
+					</label>
+					<label class="gift-form_two">
+					<input class="gift-form_two gift-form_all" type="Text" id="numb2" placeholder="Ваш номер телефона...">
+					</label>
+				</form>
+				<button class="gift_btn btn-short">Получить карту!</button>
+				</div>
+
+		</section>
+
+		<section class="advantage">
+			<div class="container">
+				<div class="advantage-wrapper">
+					<h3 class="advantage-title all-title" id="advantage">Наши преимущества</h3>
+					<div class="advantage-item">
+						<div class="advantage-item_all">
+							<img src="img/advantage/Master.svg" alt="Master">
+							<div class="advantage-block_text">
+								<p>Профессиональные мастера</p>
+								<p>Ремонт выполняют мастера с опытом от 3 лет</p>
+							</div>
+						</div>
+						<div class="advantage-item_all">
+							<img src="img/advantage/Garanty.svg" alt="Garanty">
+							<div class="advantage-block_text">
+								<p>Гарантия 1 год</p>
+								<p>Мы отвечаем за свою работу перед Вами документально</p>
+							</div>
+						</div>
+					<div class="advantage-item_all">
+							<img src="img/advantage/cash.svg" alt="cash">
+							<div class="advantage-block_text">
+								<p>Цены ниже конкурентов</p>
+								<p>Мы делаем ремонт без посредников это позволяет снизить стоимость</p>
+							</div>
+						</div>
+						<div class="advantage-item_all">
+							<img src="img/advantage/time.svg" alt="Timer">
+							<div class="advantage-block_text">
+								<p>Экспресс ремонт</p>
+								<p>Работает 5 мастеров, это позволяет делать ремонт в течении часа</p>
+							</div>
+						</div>
+						<div class="advantage-item_all">
+							<img src="img/advantage/glass-repair.svg" alt="Repair-glass">
+								<div class="advantage-block_text">
+								<p>Телефон на замену</p>
+								<p>Мы дадим Вам телефон на время ремонта Вашего</p>
+							</div>
+						</div>
+						<div class="advantage-item_all">
+							<img src="img/advantage/lightning.svg" alt="Drowned">
+							<div class="advantage-block_text">
+								<p>Сложный ремонт</p>
+								<p>Берем в ремонт утопленные телефоны и т.д.</p>
+							</div>
+						</div>
+							<div class="advantage-item_all">
+							<img src="img/advantage/Car-flasher.svg" alt="Repair">
+							<div class="advantage-block_text">
+								<p>Выездной ремонт</p>
+								<p>Мастер приедет к Вам и сделает ремонт при Вас</p>
+							</div>
+						</div>
+					<div class="advantage-item_all">
+							<img src="img/advantage/Cpu.svg" alt="Cpu">
+							<div class="advantage-block_text">
+								<p>Оригинальные запчасти</p>
+								<p>Мы используем только оригинальные запчасти</p>
+							</div>
+						</div>
+					<div class="advantage-item_all">
+							<img src="img/advantage/Card.svg" alt="Card">
+							<div class="advantage-block_text">
+								<p>Оплата картой</p>
+								<p>Для Вашего удобства мы принимаем оплату картами</p>
+							</div>
+						</div>
+						<div class="advantage-item_all">
+							<img src="img/advantage/money.svg" alt="Money">
+							<div class="advantage-block_text">
+								<p>Скидки и акции </p>
+								<p>Мы любим своих клиентов и радуем подарками</p>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div> 
+		</section>
+		<section class="scheme">
+		 <div class="container">
+		<h3 class="scheme_title all-title" id="scheme-work">Схема работы</h3>
+		<div class="scheme-items">
+
+
+		<div class="scheme-items_all">
+		<div class="scheme-items_img">
+		<span class="scheme-items_stick"></span>
+		<img src="img/scheme/retaile.svg" alt="Website">
+		</div>
+		<div class="scheme-items_descr">
+		<p>Заявка на сайте или обращение в сервис по адресу Ленинская 301</p>
+		</div>
+		</div>
+
+
+		<div class="scheme-items_all">
+		<div class="scheme-items_img">
+		<span class="scheme-items_stick-reverse"></span>
+			<img src="img/scheme/diagnostic.svg" alt="Laptop">
+		</div>
+		<div class="scheme-items_descr">
+		<p>Диагностика Вашего телефона</p> 
+		</div>		
+		</div>
+
+
+		<div class="scheme-items_all">
+		<div class="scheme-items_img">
+		<span class="scheme-items_stick"></span>
+			<img src="img/scheme/phone-repair.svg" alt="Phone-back">
+		</div>
+		<div class="scheme-items_descr">
+		Прием телефона на ремонт
+		</div>
+		</div>
+
+<div class="scheme-items__transfer">
+		<div class="scheme-items_all">
+			<div class="scheme-items_img">
+		<span class="scheme-items_stick-reverse"></span>
+			<img src="img/scheme/quality-repair.svg" alt="Phone-money">
+		</div>
+		<div class="scheme-items_descr">
+		Качественный ремонт телефона
+		</div>
+		</div>
+
+
+		<div class="scheme-items_all">
+			<div class="scheme-items_img">
+		<span class="scheme-items_stick"></span>
+			<img src="img/scheme/courier.svg" alt="Basket">
+			</div>
+		<div class="scheme-items_descr">
+		Забираете телефон из сервиса или его привозит курьер
+		</div>
+		</div>
+
+
+		<div class="scheme-items_all">
+			<div class="scheme-items_img">
+			<img src="img/scheme/payment.svg" alt="Wallet">
+			</div>
+		<div class="scheme-items_descr">
+		Оплата любым удобным способом
+		</div>
+		</div>
+		</div>
+</div>
+		<p class="scheme_center-text">Или</p>
+
+
+		<div class="scheme-items">
+
+		<div class="scheme-items_all">
+			<div class="scheme-items_img">
+		<span class="scheme-items_stick-reverse"></span>
+			<img src="img/scheme/chat.svg" alt="Chating">
+			</div>
+		<div class="scheme-items_descr">
+		Вызов мастера
+		</div>
+		</div>
+		<div class="scheme-items_all">
+			<div class="scheme-items_img">
+						<span class="scheme-items_stick"></span>
+			<img src="img/scheme/diagnostic-repair.svg" alt="Pick up-phone">
+			</div>
+		<div class="scheme-items_descr">
+		Диагностика и ремонт
+		</div>
+		</div>
+		<div class="scheme-items_all">
+			<div class="scheme-items_img">
+			<img src="img/scheme/pay.svg" alt="Bill">
+			</div>
+		<div class="scheme-items_descr">
+		Оплата
+		</div>
+		</div>
+		</div>
+		</div>
+		</section>
+
+        <section class="review">
+         <div class="container">
+		 <h3 class="review_title all-title" id="review">Отзывы наших клиентов</h3>
+         <div class="review-items">
+			<div class="review-items_one review-items_all">
+             <img src="img/review/review_one.png" alt="Girl">
+			 <div class="review-items_descr">
+             <p>Ремонт был произведён быстро и хорошо!</p>
+             <p>Мария Мороз</p>
+			 <p>Я разбила экран на iPhone 6S Plus, долго искала подходящую цену ремонта и контору внушающую доверие, когда пришла сюда мне все доходчиво растолковали и стоимость очень хороша. Ремонт был произведён быстро и хорошо, залой нет, все потеки жёлтого цвета исчезли, спасибо !)</p>
+			 <div class="review-items_social">
+             <ul>
+             <li><a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a></li>
+             <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+             </ul>
+             </div>
+             </div>
+			</div>
+			<div class="review-items_two review-items_all">
+             <img src="img/review/review_three.png" alt="Man">
+			 <div class="review-items_descr">
+             <p>Честные, добросовестные!</p>
+             <p>Константин</p>
+			 <p>Большое спасибоза отлично проведенную работу! Заменил дисплейный модуль на 6s, телефон как новенький. Про сервис: Честные, добросовестные, ремонт делали при мне, работу сделали на 5/5! P.S. Еще ставят крутую пленочку, попросите продемонстрировать если не верите :) </p>
+			 <div class="review-items_social">
+             <ul>
+             <li><a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a></li>
+             <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+             </ul>
+             </div>
+             </div>
+			</div>
+			<div class="review-items_three review-items_all">
+             <img src="img/review/review_two.png" alt="Girl">
+			 <div class="review-items_descr">
+             <p>И снова мой iPhone красавец!</p>
+             <p>Юлия</p>
+			 <p>Благодарна Мега Чехол за замену стекла на iPhone 6s. И снова мой iPhone красавец. Телефон сделали за 2.5 часа. Все качественно) Мастер - очень приятный) Буду всем советовать этот сц) Спасибо огромное) </p>
+			 <div class="review-items_social">
+             <ul>
+             <li><a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a></li>
+             <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+             </ul>
+             </div>
+             </div>
+			</div>
+			<div class="review-items_four review-items_all">
+             <img src="img/review/review_four.png" alt="Girl">
+			 <div class="review-items_descr">
+             <p>Качество супер, и цены порадовали!</p>
+             <p>Инна Сухоенко</p>
+			 <p>Обслуживаю свой iPhone уже не первый раз. Всегда оставалась довольна! Качество супер, и цены порадовали. За диагностику денег вообще не взяли, в отличии от других сервисных центров. Сегодня приду к вам клеить стекло :)</p>
+			 <div class="review-items_social">
+             <ul>
+             <li><a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a></li>
+             <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+             </ul>
+             </div>
+             </div>
+			</div>
+		</div>	
+		<div class="review-items_button">
+			<ul>
+				<li class="">1</li>
+				<li class="review-active">2</li>
+				<li class="">3</li>
+				<li class="">...</li>
+				<li class="none">5</li>
+				<li class="none">6</li>
+				<li class="none">7</li>
+				<li class="none">8</li>
+				<li class="none">9</li>
+				<li class="">10</li>
+				<li class="">11</li>
+			</ul>
+						<button class="review_btn btn-long btn">Оставить свой отзыв</button>
+		</div>
+         </div>
+        </section>
+
+<div class="overlay__three">
+<div class="popup__three popup__all">
+ <h4 class="popup__title">Заявка на диагностику без очереди</h4>
+ <div class="popup-close"> &times;</div>
+<form class="popup-form" action="#">
+	<div class="popup-form__items">
+<label class="popup-form_one popup-form_all">
+<input class="popup-form_one" type="Text" placeholder="Ваше имя или ссылка Вк..." required>
+</label>
+<label class="popup-form_two popup-form_all">
+<input class="popup-form_two" type="Text" id="numb6" placeholder="Ваш номер телефона..." required>					
+</label>
+<textarea class="popup-form__review" name="text" placeholder="Текст отзыва..." required></textarea>
+</div>
+<button class="popup__btn btn-short">Отправить!</button>
+</form>
+</div>
+</div>
+
+		<section class="gift gift__mobile-сase">
+			<div class="container">
+				<h3 class="gift_title">Оставьте заявку на ремонт и получите чехол
+<br>в подарок</h3>
+				<form class="gift-form" action="#">
+					<label class="gift-form_one">
+					<input class="gift-form_one gift-form_all" type="Text" placeholder="Ваше имя или ссылка Вк...">
+					</label>
+					<label class="gift-form_two">
+					<input class="gift-form_two gift-form_all" id="numb3" type="Text" placeholder="Ваш номер телефона...">
+					</label>
+				</form>
+				<button class="gift_btn btn-short">Получить карту!</button>
+				</div>
+		</section>
+
+   <section class="example-work">
+ <div class="container">
+ <h3 class="example-work__title all-title" id="example">Примеры выполненных работ</h3>
+<div class="example-work__items">
+<div class="example-work__item">
+<ul>
+<li class ="example-work__img"><img src="img/example/example_one.png" alt="IphoneTo"></li>
+<li class ="example-work__img"><img src="img/example/example_two.png" alt="IphoneAfter"></li>
+</ul>
+<div class="example-work__item__descr">
+<h4>
+Замена разбитого экрана на новый
+</h4>
+<p>Принес клиент, в четвертый раз уже свой любимый айфон с разбитым экраном. Наш мастер за час ему поменял экран на новый.</p>
+<p>Стоимость ремонта: 1 990&#8381;</p>
+</div>
+</div>
+
+<div class="example-work__item">
+<ul>
+<li class ="example-work__img"><img src="img/example/example_three.png" alt="IphoneTo"></li>
+<li class ="example-work__img"><img src="img/example/example_four.png" alt="IphoneAfter"></li>
+</ul>
+<div class="example-work__item__descr">
+<h4>
+Замена экрана и динамика
+</h4>
+<p>Ну здесь уже не только экран треснул, но и динамик полетел. Но для наших мастеров - это не проблема, сделано моментально и качествено!</p>
+<p>Стоимость ремонта: 3 657&#8381;</p>
+</div>
+</div>
+
+<div class="example-work__item">
+<ul>
+<li class ="example-work__img"><img src="img/example/example_five.png" alt="IphoneTo"></li>
+<li class ="example-work__img"><img src="img/example/example_six.png" alt="IphoneAfter"></li>
+</ul>
+<div class="example-work__item__descr">
+<h4>
+Замена корпуса
+</h4>
+<p>Принесли Айфон. Корпус был очень сильно поцарапан. Царапины были настолько глубокие, что ощущались на ощупь. Потратив всего 45 минут наш мастер сделал из него конфетку</p>
+<p>Стоимость ремонта: 2 990&#8381;</p>
+</div>
+</div>
+
+<div class="example-work__item">
+<ul>
+<li class ="example-work__img"><img src="img/example/example_seven.png" alt="IphoneTo"></li>
+<li class ="example-work__img"><img src="img/example/example_eight.png" alt="IphoneAfter"></li>
+</ul>
+<div class="example-work__item__descr">
+<h4>Замена корпуса и бампера</h4>
+<p>Закончилось лето и клиент по осени переоделся в темные тона. Решил поменять корпус и поставить новый бампер. У нашего мастера это заняло 47 минут</p>
+<p>Стоимость ремонта: 2 390&#8381;</p>
+</div>
+</div>
+</div>
+<button class="example-work__btn btn-long">Показать еще примеры</button>
+</div>
+</section>
+<section class="gift gift__protective-glass">
+			<div class="container">
+				<h3 class="gift_title">Оставьте заявку на ремонт и получите защитное стекло стоимостью 1000 рублей с установкой в подарок</h3>
+				<form class="gift-form" action="#">
+					<label class="gift-form_one">
+					<input class="gift-form_one gift-form_all" type="Text" placeholder="Ваше имя или ссылка Вк...">
+					</label>
+					<label class="gift-form_two">
+					<input class="gift-form_two gift-form_all" id="numb4" type="Text" placeholder="Ваш номер телефона...">
+					</label>
+				</form>
+				<button class="gift_btn btn-short">Получить карту!</button>
+				</div>
+</section>
+		<section class="contacts">
+			<div class="container">
+			<h3 class="contacts__title all-title" id="contacts">Контакты</h3>
+			<div class="contacts__items">
+
+				<div class="contacts__items_one">
+				<div class="contacts-item">
+					<div class="contacts-item__descr">
+					<small>Звонки принимаются 24 часа</small>
+				<p>8 (846) 922 55 44, 8 (917) 112 55 44</p>
+				</div>
+				<img src="img/contacts/contacts_phone.png" alt="phone">
+				</div>
+				<div class="contacts-item">
+				<div class="contacts-item__descr">
+					<small>Время работы мастера на выезде</small>
+					<p>Ежедневно с 8 до 22</p>
+				</div>
+					<img src="img/contacts/contacts_world.png" alt="world">
+				</div>
+				<div class="contacts-item">
+					<ul class="contacts-item__social">
+					<li class="contacts-item__social__text"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+					<li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+</div>
+
+<div class="contacts__items_two">
+				<div class="contacts-item">
+				<img src="img/contacts/contacts_clock.png" alt="clock">
+					<div class="contacts-item__descr">
+					<small>Время работы сервисного центра</small>
+					<p>Пн-Пт с 10 до 20 ,Сб, Вс с 11 до 18</p>
+					</div>
+				</div>
+
+				<div class="contacts-item">
+			<img src="img/contacts/contacts_point.png" alt="point">
+				<div class="contacts-item__descr">
+					<small>г. Самара</small>
+					<p>Ленинская, 301</p> 
+				</div>
+			</div>
+
+				<div class="contacts-item">
+					<ul class="contacts-item__social">
+					<li><a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a></li>
+					<li class="contacts-item__social__text"><a href="https://vk.com/" target="_blank">Вконтакте</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+ </div>
+		</section>
+		<section class="map">	
+			<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.8494097822954!2d50.1232712161468!3d53.202616879949126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41661e60af74a315%3A0xbd51e3532ec978a2!2z0YPQuy4g0JvQtdC90LjQvdGB0LrQsNGPLCAzMDEsINCh0LDQvNCw0YDQsCwg0KHQsNC80LDRgNGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGW0Y8sIDQ0MzAwMQ!5e0!3m2!1suk!2sua!4v1542658040551" allowfullscreen></iframe></div>
+		</section>
+</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__social">
+					<ul>
+						<li><a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a></li>
+						<li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			<div class="footer__text">
+				<p>2011  - 2016© <a href="www.applesamara.com">www.applesamara.com</a></p>
+				<p>Стиль, оформление, дизайн и содержание являются объектами авторского права и охраняются законом. Перепечатка и иное их использование без письменного разрешения не допускаются и ведут за собой ответственность.</p>
+			</div>
+			</div>
+		</footer>
+ <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+ <script src="libs/numbmask/jquery.maskedinput.min.js"></script>
+	<script src="libs/timepicker/jquery.timepicker.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

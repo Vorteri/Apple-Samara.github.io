@@ -1,0 +1,66 @@
+.example-work
+ text-align: center
+	margin-top: 60px
+ padding-bottom: 60px
+ &__items
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  align-items: center
+  margin-top: 50px
+  & ul
+   position: relative
+ &__img:first-child
+  margin-right: 20px
+ &__item
+  max-width: 560px
+  margin-bottom: 50px
+  &:not(:nth-child(even))
+   margin-right: 25px
+  &__descr
+   text-align: left
+   & h4
+		  color: #464646
+		  font-weight: 500
+				font-size: 18px
+		  margin-top: 15px
+		  margin-bottom: 7px
+   & p:nth-child(2)
+				font-size: 16px
+				color: #464646
+				font-weight: 300
+				line-height: 23px
+			& p:nth-child(3)
+				color: #3fc7db
+				font-size: 24px
+				font-weight: 400
+				margin-top: 7px
+	&__img
+		display: inline-flex
+		position: relative
+		&:after
+		 content: ''
+		 display: block
+		 position: absolute
+		 top: 0
+		 right: 0
+		 height: 100%
+		 width: 100%
+		 z-index: 1
+		 background: linear-gradient(90deg, rgba(31, 136, 157, 0.1) 0%, rgba(87, 101, 148, 0.1) 38%, rgba(139, 68, 141, 0.1) 100%)
+		&:nth-child(2):before
+		 content: ''
+		 background: url(../img/example/arrow.png)
+		 position: absolute
+		 z-index: 2
+		 top: 50%
+		 transform: translateY(-50%) translateX(-50%)
+		 right: 75%
+		 width: 75px
+		 height: 75px
+	&__arrow
+	 position: absolute
+	 top: 50%
+	 z-index: 10
+	 transform: translateY(-50%)
+	 right: 49.5%

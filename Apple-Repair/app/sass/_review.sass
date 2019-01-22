@@ -1,0 +1,72 @@
+.review
+ background-color: #f0f3f8
+ padding-top: 50px
+ padding-bottom: 50px
+ font-weight: $fw-text-light
+	&-items 
+	 display: inline-flex
+	 flex-flow: row wrap
+	 margin-top: 50px
+	 &_all
+		 display: flex
+		 flex-flow: row nowrap
+		 max-width: 558px
+		 margin-bottom: 40px
+		 margin-right: 14px
+		 img 
+		  width: 111px
+		  height: 111px
+		 &:nth-child(even) 
+ 			margin-left: 40px
+  &_descr 
+		 color: $text-dark
+		 margin-left: 20px
+   & p:nth-child(1)
+				color: #3fc7db
+				font-size: 21px
+				font-weight: 500
+			& p:nth-child(2)
+				font-size: 13px
+				font-weight: 500
+				margin-bottom: 7px
+				margin-top: 7px
+			& p:nth-child(3)
+			 line-height: 24px
+			 font-size: 15px
+			 font-weight: 300
+		&_social ul
+		 display: inline-flex
+		 margin-top: 20px
+		 & li
+				padding: 8px
+				background-color: #3fc7db
+				border-radius: 50%
+				margin-right: 7px
+			 &:last-child
+     margin: 0px
+    & a i
+					 width: 20px
+					 height: auto
+					 color: white
+					 text-align: center
+		&_button ul
+		 display: flex
+		 justify-content: center
+			color: $text-dark
+			font-size: 14px
+			margin-bottom: 30px
+		 li:not(:first-child)
+		  margin-left: 10px
+		 li:not(:nth-child(4))
+		  width: 43px
+		  box-sizing: border-box
+				padding-top: 14px
+				padding-bottom: 14px
+				cursor: pointer
+				text-align: center
+		  background-color: #ffffff
+		  border-radius: 50%
+		 li:nth-child(4)
+		  margin-top: 20px
+  &_button
+   text-align: center

@@ -1,0 +1,52 @@
+.gift
+ position: relative
+ text-align: center
+ z-index: 1
+ background: url(../img/gift/gift_bg.png) no-repeat
+ background-size: cover
+ background-position: 70%
+ &:after
+  content: ''
+  display: block
+  position: absolute
+  height: 100%
+  width: 100%
+  top: 0
+  right: 0
+  z-index: -1
+  background: #c2e9ef
+  background: linear-gradient(90deg, rgba(31,136,157,0.3) 0%, rgba(139,68,141,0.3) 70%)
+ &__mobile-сase
+  background: url(../img/gift/mobile-case_bg.png) no-repeat
+ &__protective-glass
+  background: url(../img/gift/money-gift__bg.png) no-repeat
+	&_title
+		position: relative
+  color: $text-dark
+  font-size: 37px
+  font-weight: $fw-text-light
+  padding-top: 50px
+  padding-bottom: 75px
+  &::after
+  	@include bottom_text-line
+ &-form
+  margin-bottom: 20px
+ 	&_all
+ 		padding: 20px 65px 20px 60px
+ 		border-radius: 80px
+		&_one , .gift-form_two
+			position: relative
+		&_two
+			margin-left: 5px
+.gift-form_one:after , .gift-form_two:after
+	content: '' 
+	background: url(../img/gift/guest.svg) no-repeat 
+	position: absolute 
+	top: 0 
+	left: 24px 
+	width: 20px 
+	height: 20px
+.gift-form_two:after
+	background: url(../img/gift/smartphone.svg) no-repeat 
+.gift_btn
+  margin-bottom: 35px

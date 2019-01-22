@@ -1,0 +1,76 @@
+.ba-slider
+ margin-top: 33px
+ position: relative
+ overflow: hidden
+ height: 527px
+ img
+  width: 100%
+  display: block
+
+.resize
+ position: absolute
+ top: 0
+ left: 0
+ height: 100%
+ width: 50%
+ overflow: hidden
+
+.handle
+ position: relative
+ left: 50%
+ top: -510px
+ margin-left: -23px
+ width: 25px
+ height: 505px
+ background: -o-radial-gradient(1px, transparent, transparent 5px, white 4px, white 10px, transparent 10px)
+ background: -webkit-radial-gradient(1px, transparent, transparent 5px, white 4px, white 10px, transparent 10px)
+ background: radial-gradient(1px, transparent, transparent 5px, white 4px, white 10px, transparent 10px)
+ background-size: 45px 30px
+ cursor: ew-resize
+ &:after
+	 content: ''
+	 position: absolute
+	 top: -35px
+	 right: -20px
+	 width: 25px
+	 height: 560px
+	 background: -o-radial-gradient(1px, transparent, transparent 5px, white 4px, white 10px, transparent 10px)
+	 background: -webkit-radial-gradient(1px, transparent, transparent 5px, white 4px, white 10px, transparent 10px)
+	 background: radial-gradient(1px, transparent, transparent 5px, white 4px, white 10px, transparent 10px)
+	 background-size: 48px 30px
+	 -webkit-transform: rotate(180deg)
+	 -ms-transform: rotate(180deg)
+	 transform: rotate(180deg)
+ &:before
+  content: ''
+  border: 2px solid #fff
+  position: absolute
+  top: 50%
+  left: -57%
+  margin-top: -18px
+  width: 79px
+  height: 46px
+  -webkit-box-shadow: -5px 0 5px rgba(0, 0, 0, 0.39)
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.39)
+  border-radius: 46%
+  background-color: #ffa14b
+  border: 3px solid #fff
+  z-index: 100
+ &-center
+		position: absolute
+		left: 25px
+		top: 240px
+		width: 2px
+		height: 35px
+		background-color: #fff
+		z-index: 101
+.handle-arrow_left
+	 position: absolute
+	 right: 8px
+.handle-arrow_right
+  position: absolute
+  left: 8px
+.handle-arrow_left, .handle .handle-arrow_right
+	 top: 9px
+	 width: 20px
+	 z-index: 110

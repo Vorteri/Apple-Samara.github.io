@@ -1,0 +1,30 @@
+.nav-top
+	width: 100%
+	background-color: $bg-dark
+	opacity: 0.8
+ &__wrapper
+		@include flex
+		height: 48px
+		font-weight: $fw-text-light
+		font-size: 13px
+		line-height: 24px
+	&__mobile
+	 display: none
+.nav-top .nav-top__wrapper li
+	display: flex
+	& a:hover
+	 color: #5e5e5e
+	 transition: color 0.4s ease
+ &:nth-child(1)
+	 margin-right: 100px
+  &:before
+			@include nav-top_before_after(0px, 16px)
+  &:after
+  	@include nav-top_before_after(16px, 0px)
+ &:nth-child(n+2):nth-child(-n+7):after
+	 content: ''
+	 margin-right: 22px
+	 margin-left: 32px
+	 border-right: 1px dotted $text-white
+ &:nth-child(1) a
+	 transform: translateY(3px)

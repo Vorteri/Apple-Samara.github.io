@@ -1,0 +1,38 @@
+.footer
+ margin-top: -5px
+ background-color: #363738
+ color: #5e5e5e
+ text-align: center
+ padding-top: 20px
+ padding-bottom: 40px
+ &__social ul
+  display: inline-flex
+  & li a
+   color: #ffffff
+   padding: 10px
+	  border-radius: 50%
+	  background-color: $btn-blue
+	 & li:nth-child(2) a
+	  margin-left: 7px
+	  padding-right: 12px
+	  padding-left: 12px
+	&__social
+	 position: relative
+	 padding-top: 13px
+	 padding-bottom: 80px
+	 &::after
+	  content: ''
+	  position: absolute
+	  bottom: 40%
+	  left: 0
+	  height: 1px
+	  width: 100%
+	  background-color: #6b6b6b
+ &__text p:first-child , a 
+  color: #5e5e5e
+  margin-bottom: 10px
+ &__text
+		opacity: 0.9
+		font-size: 16px
+		font-weight: 300
+		line-height: 17px

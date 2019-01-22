@@ -1,0 +1,42 @@
+.service
+	padding: 50px 0px 50px 0px
+	font-weight: 300 !important
+	text-align: center
+	&_title
+		color: #31353b
+		position: relative
+		font-size: 39px
+		line-height: 38px
+		font-weight: $fw-text-light
+		&:after
+			@include bottom_text-line
+	&_subtitle
+		padding-top: 49px
+		color: #31353b
+		font-size: 20px
+		font-weight: $fw-text-light
+		line-height: 36px
+	&_img
+		margin-top: 60px
+		position: relative
+	 &::after
+	 	content: ''
+	 	position: absolute
+	 	top: -35%
+	 	left: 50%
+	 	transform: translateX(-51%)
+			width: 120px 
+			height: 120px
+	 	border-radius: 50%
+	 	margin-left: 2px
+	 	z-index: -1
+	 	background-color: transparent
+	 	border: 1px solid $line-blue
+ &_text
+ 	font-size: 18px
+ 	margin-top: 35px
+ 	margin-bottom: 40px
+	 font-weight: $fw-text-light
+	 line-height: 38px
+	&-btn_one
+	 background-color: #ffa14b

@@ -1,0 +1,136 @@
+.overlay, .overlay__two, .overlay__three
+ position: fixed
+ display: none
+ top: 0
+ width: 100%
+ height: 100%
+ z-index: 998
+ background-color: rgba(0, 0, 0, 0.4)
+.popup, .popup__two, .popup__three
+ position: fixed
+ left: 50%
+ top: 100px
+ transform: translateX(-50%)
+ z-index: 999
+ width: 360px
+.popup
+ width: 380px
+ &__two
+  width: 480px
+ &__three
+  width: 670px 
+ &-close
+  position: absolute
+  right: -20px
+  top: -30px
+  font-size: 35px
+  color: #fff
+  font-weight: 300
+  cursor: pointer
+ &__title
+  width: 100%
+  padding-top: 15px
+  padding-bottom: 15px
+  text-align: center
+  background-color: #3fc8db
+  color: #ffffff
+  font-weight: 500
+  font-size: 18px
+  line-height: 28px
+  text-transform: uppercase
+ &-form 
+  display: flex
+  flex-flow: column wrap
+  justify-content: center
+  align-items: center
+  background-color: #f0f3f8
+  padding-top: 20px
+  padding-bottom: 20px
+  &_two:after
+   background: url(../img/gift/smartphone.svg) no-repeat
+  &_one:after
+   background: url(../img/gift/guest.svg) no-repeat
+  & .popup-time__text
+   display: inline-flex
+   margin-right: 10px
+   margin-left: 10px
+   color: #292929
+   font-size: 13px
+   font-weight: 300
+   line-height: 17px
+   text-transform: uppercase
+  & .popup-time
+   width: 63px
+   height: 43px
+   margin-top: 10px
+   padding-left: 7px
+   border: 1px solid #e6e7e8
+   border-radius: 15%
+   background: url(../img/popup/popup-arrow.svg) #fff no-repeat scroll 45px 19px
+   color: #606060
+  &_all
+   position: relative
+   border: 1px solid #e6e7e8
+   border-radius: 80px
+   padding: 20px
+   width: 75%
+   background-color: #ffffff
+   &:after, .popup-form_two:after
+    content: ''
+    position: absolute
+    top: 30%
+    left: 24px
+    width: 20px
+    height: 20px
+   &:not(:nth-child(2))
+    margin-bottom: 10px
+  &_one label
+   margin-bottom: 10px
+ &-time__title 
+  color: #292929
+  font-size: 15px
+  font-weight: 400
+  line-height: 17px
+  text-transform: uppercase
+  margin-top: 20px
+ &__btn
+  margin-top: 25px
+  margin-bottom: 10px
+.popup
+ &__btn
+  width: 222px
+  height: 50px
+ &__two .popup-form_all
+  width: 70%
+  padding-right: 90px
+ &__two .popup-form .popup-form_all
+  padding-top: 20px
+  padding-bottom: 20px
+ &-form .popup-form__items 
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+ &__three .popup-form .popup-form_all
+  width: 38%
+  padding-top: 20px
+  padding-bottom: 20px
+  margin-bottom: 10px
+  margin-top: 10px
+ &__three .popup-form .popup-form_one
+  margin-right: 8px
+.popup__three .popup-form__review
+ width: 80%
+ max-width: 76%
+ height: 189px
+ border: 1px solid rgba(0, 0, 0, 0.11)
+ background: url('../img/popup/popup-pen.png') no-repeat scroll 25px 20px
+ background-color: #ffffff
+ font-size: 13px
+ font-family: Roboto
+ font-weight: 400
+ line-height: 24px
+.popup__all textarea[placeholder]
+ padding-top: 20px
+ padding-left: 60px
+.popup__all input[placeholder]
+ padding-left: 40px

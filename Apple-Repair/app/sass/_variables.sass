@@ -1,0 +1,78 @@
+.all-title
+ position: relative
+ text-align: center
+ color: #31353b
+ font-size: 37px
+ font-weight: 300
+ padding-bottom: 50px
+
+.all-title:after
+ content: ''
+ position: absolute
+ background-color: #3fc7db
+ left: 50%
+ transform: translateX(-50%)
+ top: 75%
+ width: 315px
+ height: 1px
+.none
+ display: none
+.review-active
+ border: 1px solid #61d0e0
+.container
+	margin: auto
+	max-width: 1200px
+.btn-short
+	padding: 12px 32px
+	border-radius: 40px
+	background-color: #ffa14b
+	font-size: 14px
+	font-weight: 400
+	line-height: 22.04px
+.btn-long
+ padding-top: 13px
+ padding-bottom: 13px
+ width: 260px
+	border-radius: 40px
+	font-size: 14px
+	font-weight: 400
+	line-height: 22.04px 
+	background-color: #d1b49a
+	color: #ffffff
+	font-size: 15px
+	font-weight: 400
+	line-height: 22.04px
+.btn-short:hover , .btn-long:hover	 
+ background-color: #a0a9ba
+ transition: all 1s ease
+.contacts-item__social li:hover
+ text-decoration: underline
+ color: #3fc7db
+ transition: all 2s ease
+
+@mixin flex
+ display: flex
+ align-items: center
+ justify-content: space-between 
+@mixin bottom_text-line
+	content: ''
+	position: absolute
+	background-color: $line-blue
+	left: 50%
+	transform: translateX(-50%) translateY(-75%)
+	top: 75%
+	width: 315px
+	height: 1px
+@mixin nav-top_before_after($margin-left, $margin-right)
+ content: ''
+ border-right: 1px dotted $text-white
+ margin-left: $margin-left
+ margin-right: $margin-right
+$ff-def: "Roboto", Arial, Times New Roman
+$bg-dark: #242424
+$text-white: #ffffff
+$text-dark: #31353b
+$fw-text-light: 300
+$btn-orange: #ffa14b
+$btn-blue: #3fc7db
+$line-blue: #3fc7db
