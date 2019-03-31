@@ -1,0 +1,44 @@
+.header
+	width: 100%
+	height: 100vh
+	min-height: 480px
+	position: relative
+	background-image: url(../img/header/header-bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	color: #ffffff
+ font-family: "Proxima Nova Lt", sans-serif
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 0px
+		width: 100%
+		height: 100vh
+	 background: linear-gradient(90deg, rgba(26,126,188,0.9) 0%, rgba(70,96,192,0.9) 50%, rgba(116,68,191,0.9) 100%)
+		z-index: -1
+
+.nav, .nav__first-block, .nav__second-block
+	display: flex
+	justify-content: space-between
+	align-items: center
+ z-index: 1
+	padding-top: 60px
+.nav
+	&__logo
+		border-right: 1px solid white
+		padding-right: 30px
+		height: 65px
+	&__descr 
+		font-size: 16px
+		font-weight: 400
+		line-height: 22px
+		margin-left: 30px
+	&__number
+		margin-right: 30px
+	&__number p:nth-child(1)
+		text-align: right
+		margin-bottom: 5px
+	&__number p:nth-child(2)
+		font-size: 19px
+		font-family: "Proxima Nova Bol", sans-serif

@@ -29,11 +29,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('scripts', function() {
-	return gulp.src([ // Берем все необходимые библиотеки
-		'app/libs/jquery.min.js',
-		'app/libs/slick.min.js',
-		'app/libs/jquery.maskedinput.min.js',
-		'app/libs/wow.min.js' // Берем jQuery, через кому писати які файли збирати до купи
+	return gulp.src([
+		'app/libs/jquery.min.js' // Берем jQuery, через кому писати які файли збирати до купи
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
@@ -46,7 +43,7 @@ gulp.task('code', function() {
 });
 
 gulp.task('css-libs', function() {
-	return gulp.src('app/css/style.css') // Выбираем файл для минификации
+	return gulp.src('app/css/main.css') // Выбираем файл для минификации
 		.pipe(cssnano()) // Сжимаем
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
