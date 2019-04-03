@@ -128,7 +128,12 @@ input {
   background-image: -o-linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
   background-image: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%); }
 
-.header {
+input {
+  color: #606060;
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-size: 14px; }
+
+.header, .questions {
   width: 100%;
   padding-bottom: 150px;
   position: relative;
@@ -138,7 +143,7 @@ input {
           background-size: cover;
   color: #ffffff;
   font-family: "Proxima Nova Lt", sans-serif; }
-  .header::before {
+  .header::before, .questions::before {
     content: '';
     display: block;
     position: absolute;
@@ -221,7 +226,7 @@ input {
     padding-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 19px;
     border-top: 1px solid white;
     border-left: 1px solid white;
     border-right: 1px solid white; }
@@ -239,33 +244,32 @@ input {
       margin-bottom: 30px; }
     .header-main__form input {
       margin: 0 auto;
-      margin-bottom: 15px;
       padding-top: 17px;
       padding-bottom: 17px;
       padding-left: 40px;
       padding-right: 90px;
       -webkit-border-radius: 50px;
               border-radius: 50px; }
-    .header-main__form label img {
-      position: absolute;
-      margin-top: 13px;
-      left: 42px; }
+    .header-main__form #post-name {
+      margin-bottom: 15px; }
+    .header-main__form #post-name {
+      background-image: url(../img/header/user.png);
+      background-repeat: no-repeat;
+      background-position: 5%; }
+    .header-main__form #post-phone {
+      background-image: url(../img/header/phone.png);
+      background-repeat: no-repeat;
+      background-position: 5%; }
 
 .header-main__form-btn {
-  position: absolute;
-  margin-top: 10px;
-  display: block;
-  width: 230px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
+  position: relative;
+  top: 50px; }
   .header-main__form-btn::before {
     content: "";
     display: block;
     position: absolute;
-    left: -66px;
-    top: 30px;
+    top: 25px;
+    left: -60px;
     width: 50px;
     height: 1px;
     background-color: white; }
@@ -273,8 +277,8 @@ input {
     content: "";
     display: block;
     position: absolute;
-    right: -65px;
-    top: 30px;
+    top: 25px;
+    right: -60px;
     width: 50px;
     height: 1px;
     background-color: white; }
@@ -576,7 +580,8 @@ input {
   .services__item {
     border: 1px solid #eeedee;
     -webkit-border-radius: 30px;
-            border-radius: 30px; }
+            border-radius: 30px;
+    max-width: 360px; }
     .services__item:not(:last-child) {
       margin-right: 30px; }
     .services__item-img {
@@ -606,6 +611,154 @@ input {
       padding-right: 55px;
       padding-left: 55px; }
 
+.questions {
+  height: 390px;
+  padding-bottom: 0px;
+  background: url(../img/education/questions.png) no-repeat;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .questions__title {
+    color: #ffffff;
+    font-family: "Proxima Nova Rg", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .questions__subtitle {
+    color: #ffffff;
+    font-family: "Proxima Nova Lt", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 30px; }
+  .questions__input-wrapper {
+    margin-bottom: 20px; }
+    .questions__input-wrapper input {
+      display: inline-block;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 40px;
+      padding-right: 90px;
+      -webkit-border-radius: 50px;
+              border-radius: 50px; }
+    .questions__input-wrapper label:first-child input {
+      background-image: url(../img/header/user.png);
+      background-repeat: no-repeat;
+      background-position: 5%; }
+    .questions__input-wrapper label:nth-child(2) input {
+      background-image: url(../img/header/phone.png);
+      background-repeat: no-repeat;
+      background-position: 5%; }
+
+.contacts {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  .contacts__title {
+    text-align: center;
+    color: #202020;
+    font-family: "Proxima Nova Rg";
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-bottom: 50px; }
+  .contacts__wrapper {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px; }
+  .contacts__block-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .contacts__adress p:nth-child(1) {
+    color: #202020;
+    font-family: "Proxima Nova Bol";
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 22px; }
+  .contacts__adress p:nth-child(2) {
+    color: #202020;
+    font-family: "Proxima Nova Rg";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 22px; }
+    .contacts__adress p:nth-child(2) i {
+      color: #ffffff;
+      text-align: center;
+      padding: 8px 10px;
+      margin-right: 10px;
+      font-size: 10px;
+      -webkit-border-radius: 50px;
+              border-radius: 50px;
+      background-color: #1991d4;
+      background-image: -webkit-linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
+      background-image: -o-linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
+      background-image: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%); }
+  .contacts__phone p:nth-child(1) {
+    color: #202020;
+    font-family: "Proxima Nova Bol", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    line-height: 22px; }
+  .contacts__phone p:nth-child(2) {
+    color: #202020;
+    font-family: "Proxima Nova Rg", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 22px; }
+    .contacts__phone p:nth-child(2) i {
+      color: #ffffff;
+      text-align: center;
+      padding: 9px 10px;
+      font-size: 10px;
+      margin-right: 10px;
+      -webkit-border-radius: 50px;
+              border-radius: 50px;
+      background-color: #1991d4;
+      background-image: -webkit-linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
+      background-image: -o-linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
+      background-image: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%); }
+  .contacts__wrapper > p {
+    color: #202020;
+    font-family: "Proxima Nova Rg", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 15px; }
+
+.btn__contacts {
+  padding: 0px;
+  width: 150px;
+  height: 45px; }
+
 @media (max-width: 1200px) {
   .about__wrapper {
     -webkit-box-orient: vertical;
@@ -627,7 +780,25 @@ input {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .services__wrapper {
+    display: inline-block;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .services__item:not(:last-child) {
+    margin-bottom: 20px;
+    margin-right: 0px; } }
 
 @media (max-width: 992px) {
   .header .nav, .nav__first-block, .nav__second-block {
@@ -662,7 +833,19 @@ input {
   .header-main__form-subtitle, .advantages__subtitle {
     font-size: 15px; }
   .main .advantages__items-wrapper .advantages__item {
-    margin-bottom: 60px; } }
+    margin-bottom: 60px; }
+  .contacts__block-wrapper {
+    display: block;
+    text-align: center; }
+  .contacts__wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 @media (max-width: 768px) {
   .header {
@@ -743,7 +926,11 @@ input {
     text-align: center; }
   .education-book-up__descr {
     margin-right: 0px;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .questions .questions__input-wrapper label:first-child input {
+    margin-bottom: 20px; }
+  .header-main__form-btn::before {
+    top: 23px; } }
 
 @media (max-width: 576px) {
   .nav__descr {
@@ -754,10 +941,14 @@ input {
   .header-main__form {
     padding-left: 20px;
     padding-right: 20px; }
-    .header-main__form label img {
-      left: 28px;
-      margin-top: 13px;
-      width: 15px; }
+    .header-main__form #post-name {
+      -webkit-background-size: 16px 17px;
+              background-size: 16px 17px;
+      background-position: 4%; }
+    .header-main__form #post-phone {
+      -webkit-background-size: 16px 20px;
+              background-size: 16px 20px;
+      background-position: 5%; }
   .header-main__form input {
     padding: 15px 60px 15px 30px; }
   .header-main__form-btn {
@@ -765,11 +956,11 @@ input {
   .btn-lg {
     font-size: 12px; }
   .header-main__form-btn::before, .header-main__form-btn::after {
-    width: 40px; }
+    width: 25px; }
   .header-main__form-btn::before {
-    left: -49px; }
+    left: -40px; }
   .header-main__form-btn::after {
-    right: -50px; }
+    right: -40px; }
   .advantages__items-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -787,4 +978,8 @@ input {
   .main .advantages__items-wrapper .advantages__item {
     margin-bottom: 25px; }
   .education-item {
-    width: 80%; } }
+    width: 80%; }
+  .services__item .services__item-img img {
+    width: 280px; }
+  .services__item-text {
+    font-size: 15px; } }

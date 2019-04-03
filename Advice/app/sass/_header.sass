@@ -1,4 +1,4 @@
-.header
+.header , .questions
 	width: 100%
  padding-bottom: 150px
 	position: relative
@@ -71,7 +71,7 @@
 			top: 40px
 			left: 30px
 			right: 30px
-			bottom: 40px
+			bottom: 19px
 		border:
 			top: 1px solid white
 			left: 1px solid white
@@ -90,39 +90,40 @@
 			margin-bottom: 30px
 		& input
 			margin: 0 auto
-			margin-bottom: 15px
 			padding:
 				top: 17px
 				bottom: 17px
 				left: 40px
 				right: 90px
 			border-radius: 50px
-		& label img
-			position: absolute
-			margin-top: 13px
-			left: 42px
+		& #post-name
+			margin-bottom: 15px
+		& #post-name
+			background-image: url(../img/header/user.png)
+			background-repeat: no-repeat
+			background-position: 5%
+		& #post-phone
+			background-image: url(../img/header/phone.png)
+			background-repeat: no-repeat
+			background-position: 5%
 .header-main__form-btn
-	position: absolute
-	margin-top: 10px
-	display: block
-	width: 230px
-	left: 50%
-	transform: translateX(-50%)
+	position: relative
+	top: 50px
 	&::before
 		content: ""
 		display: block
-	 position: absolute
-		left: -66px
-		top: 30px
+		position: absolute
+		top: 25px
+		left: -60px
 		width: 50px
 		height: 1px
 		background-color: white
 	&::after
 		content: ""
 		display: block
-	 position: absolute
-		right: -65px
-		top: 30px
+		position: absolute
+		top: 25px
+		right: -60px
 		width: 50px
 		height: 1px
 		background-color: white

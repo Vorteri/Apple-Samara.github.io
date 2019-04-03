@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<meta name="theme-color" content="#202020">
 	<title>Advice</title>
 </head>
@@ -48,11 +50,9 @@
 			<h2 class="header-main__form-title">Оставьте заявку</h2>
 			<p class="header-main__form-subtitle">Чтобы получить бесплатный пакет<br> материалов о финансовом рынке</p>
 			<label for="post-name">
-				<img src="img/header/user.png" alt="user">
 				<input id="post-name" type="text" placeholder="Ваше имя">
 			</label>
 			<label for="post-phone">
-					<img src="img/header/phone.png" alt="phone">
 				<input id="post-phone" type="text" placeholder="Ваш номер телефона">
 			</label>
 		<button class="header-main__form-btn btn-lg">Получить материалы</button>
@@ -231,37 +231,85 @@
 				<div class="services__item">
 					<div class="services__item-img">
 						<img src="img/services/services-first.png" alt="image">
+					</div>
 						<div class="services__item-descr">
 							<h3 class="services__item-title">Инвестиции</h3>
-							<p class="services__item-text">Мы составим для Вас персональный финансовый план по инвестированию</p>
+							<p class="services__item-text">Мы составим для Вас персональный<br> финансовый план по<br> инвестированию</p>
 							<button class="services__item-btn btn-md">Узнать</button>
 						</div>
-					</div>
 				</div>
 				<div class="services__item">
 					<div class="services__item-img">
 						<img src="img/services/services-second.png" alt="image">
+					</div>
 						<div class="services__item-descr">
 							<h3 class="services__item-title">Доверительное управление</h3>
-							<p class="services__item-text">Профессиональные трейдеры компании готовы управлять Вашими финансами</p>
+							<p class="services__item-text">Профессиональные трейдеры компании<br> готовы управлять Вашими<br> финансами</p>
 							<button class="services__item-btn btn-md">Узнать</button>
 						</div>
-					</div>
 				</div>
 				<div class="services__item">
 					<div class="services__item-img">
 						<img src="img/services/services-third.png" alt="image">
+					</div>
 						<div class="services__item-descr">
 							<h3 class="services__item-title">Рынки криптовалюты</h3>
-							<p class="services__item-text">Обучение торговли и управление финансами и торговлей на рынках криптовалюты и ICO</p>
+							<p class="services__item-text">Обучение торговли и управление<br> финансами и торговлей на рынках<br> криптовалюты и ICO</p>
 							<button class="services__item-btn btn-md">Узнать</button>
 						</div>
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="questions">
+		<div class="container">
+			<h2 class="questions__title">Остались вопросы?</h2>
+			<p class="questions__subtitle">Задайте их профессиональному трейдеру!</p>
+			<div class="questions__input-wrapper">
+				<label for="questions__name">
+					<input id="questions__name" type="text" placeholder="Ваше имя">
+				</label>
+				<label for="questions_phone">
+					<input id="questions_phone" type="text" placeholder="Ваш номер телефона">
+				</label>
+			</div>
+			<button class="btn-lg">Получить консультацию</button>
+		</div>
+	</div>
 </main>
+
+<footer class="footer">
+
+
+		<div class="contacts">
+			<div class="container">
+				<h2 class="contacts__title">Где проходит обучение?</h2>
+			<div class="contacts__block-wrapper">
+				<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.7462149627377!2d37.85441991609911!3d55.76291069867955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acb0078911c4b%3A0xb0e860f633fa84ab!2z0YPQuy4g0J_QvtCx0LXQtNGLLCAxMC8xLCDQoNC10YPRgtC-0LIsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGW0Y8sIDE0Mzk2MA!5e0!3m2!1suk!2sua!4v1554307098415!5m2!1suk!2sua" width="628" height="406" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+				<div class="contacts__wrapper">
+					<div class="contacts__adress">
+						<p>Адрес нашего тренинг центра</p>
+						<p><i class="fas fa-map-marker-alt"></i>Москва, улица Победы, 1</p>
+					</div>
+
+					<div class="contacts__phone">
+							<p>Остались вопросы? Позвоните</p>
+							<p><i class="fas fa-phone"></i>+38 (097) 835-73-77</p>
+						</div>
+
+						<p>Или оставьте заявку на звонок</p>
+						<button class="btn-lg btn__contacts">Заказать звонок</button>
+				</div>
+			</div>
+			</div>
+			</div>
+
+
+</footer>
 </body>
 <script src="js/libs.min.js"></script>
 <script>
