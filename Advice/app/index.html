@@ -8,7 +8,8 @@
 	<link rel="icon" href="#"> <!-- Зображення в тайтлі -->
 	<link rel="apple-touch-icon" sizes="180x180" href="#">
 	<link rel="stylesheet" href="css/main.css">
-
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<meta name="theme-color" content="#202020">
 	<title>Advice</title>
 </head>
@@ -46,14 +47,233 @@
 		<form class="header-main__form" action="#">
 			<h2 class="header-main__form-title">Оставьте заявку</h2>
 			<p class="header-main__form-subtitle">Чтобы получить бесплатный пакет<br> материалов о финансовом рынке</p>
-				<input type="text" placeholder="Ваше имя">
-				<input type="text" placeholder="Ваш номер телефона">
-
+			<label for="post-name">
+				<img src="img/header/user.png" alt="user">
+				<input id="post-name" type="text" placeholder="Ваше имя">
+			</label>
+			<label for="post-phone">
+					<img src="img/header/phone.png" alt="phone">
+				<input id="post-phone" type="text" placeholder="Ваш номер телефона">
+			</label>
 		<button class="header-main__form-btn btn-lg">Получить материалы</button>
 		</form>
-
 	</div>
-	</div>	
+
+	<a href="#"><div class="arrow-bottom"></div></a>
+</div>	
 	</header>
+<main class="main">
+<div class="about">
+	<div class="container">
+		<div class="about__title title">
+				<h2>О нашей компании</h2>
+			</div>
+		<div class="about__wrapper">
+			<div class="about__descr-wrapper">
+		<div class="about__descr">
+			<p>Консалтинговая компания ООО "Эдвайс Финанс" – <b>партнер российского форекс-дилера ООО «Телетрейд Групп»</b>, имеющего лицензию Банка России на осуществление деятельности профессионального участника рынка ценных бумаг.
+					<b>Наша</b> задача – обучить клиентов эффективной работе с мировыми финансовыми площадками, с помощью уникальной авторской методики. 
+					Мы ведем работу по 2 основным направлениям:</p>
+				</div>
+				<div class="about__wrapper-img">
+					<div class="about__first-img">
+						<img src="img/about/first-guy.png" alt="man">
+						<p>Обучение с нуля</p>
+					</div>
+					<div class="about__second-img">
+						<img src="img/about/second-guy.png" alt="man">
+						<p>Повышение квалификации</p>
+				</div>
+			</div>
+			</div>
+		<div class="about__video">
+				<iframe width="555" height="370" src="https://www.youtube.com/embed/VtWBZnddo1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+
+<div class="advantages">
+<div class="container">
+		<div class="advantages__title title">
+			<h2>Обучение трейдеров с нуля за 0 рублей!</h2>
+			</div>
+			<div class="advantages__subtitle">
+				<p>Наша уникальная <b>бесплатная программа</b> обучения трейдеров состоит из 10-ти часовых занятий, в которых мы изучим теорию и заркепим ее практике на демо-счете.</p>
+				<p>По окончанию программы, <b>Вы будете уметь:</b></p>
+			</div>
+
+			<div class="advantages__items-wrapper">
+					<div class="advantages__item">
+						<img src="img/advantages/advatage-first.png" alt="">
+						<p>Вам легко будет объективно оценивать<br>
+								финансовые рынки</p>
+					</div>
+					<div class="advantages__item">
+						<img src="img/advantages/advatage-second.png" alt="">
+						<p>Сможете грамотно оценивать риски<br>
+								инвестирования в те или иные<br>
+								активы</p>
+					</div>
+					<div class="advantages__item">
+						<img src="img/advantages/advatage-third.png" alt="">
+						<p>Разбиратся в событиях на финансовых<br>рынках и сможете самостоятельно их<br>
+								прогнозировать</p>
+					</div>
+			</div>
+			<div class="advantages__items-wrapper">
+					<div class="advantages__item">
+							<img src="img/advantages/advatage-four.png" alt="">
+							<p>Анализировать котировки с помощью<br>
+									специализированного ПО</p>
+						</div>
+						<div class="advantages__item">
+							<img src="img/advantages/advatage-five.png" alt="">
+							<p>Составлять торговую стратегию с<br>
+									доходностью от 10% в месяц</p>
+						</div>
+						<div class="advantages__item">
+							<img src="img/advantages/advatage-six.png" alt="">
+							<p>Получать прибыль от торговли, используя<br>
+									аналитику и новости</p>
+						</div>
+			</div>
+
+			<button class="btn-lg">Получить консультацию о курсе</button>
+</div>
+</div>
+
+<div class="education">
+	<div class="container">
+		<div class="title education__title">
+			<h2>Почему стоит выбрать наше обучение?</h2>
+		</div>
+		<div class="education__items-wrapper">
+			<div class="education-item">
+				<div class="education-item__number"><p>10</p></div>
+				<p>10 часов индивидуального<br>
+					обучения</p>
+			</div>
+			<div class="education-item">
+				<div class="education-item__number"><p>5</p></div>
+				<p> Наша компания 5 лет работает<br>
+					в обучении</p>
+			</div>
+			<div class="education-item">
+				<div class="education-item__number"><p>1000</p></div>
+				<p>Прошли более 1000 начинающих<br>
+					трейдеров</p>
+			</div>
+		</div>
+
+		<div class="education__certificate">
+			<img src="img/education/certificate.png" alt="certificate">
+			<p>Так же по окончанию обучения Вы получите сертификат о прохождении курса и доступ<br>
+				к закрытой рассылке трейдеров по аналитике и инсайтам.</p>
+		</div>
+	</div>
+</div>
+
+ <div class="education-book-up">
+		<div class="container">
+			<div class="education-book-up__wrapper">
+		<div class="education-book-up__descr">
+			<h3 class="education-book-up__title">Набор группы уже идет</h3>
+			<p class="education-book-up__subtitle">Успейте забронировать место в группе!</p>
+	</div>
+	<button class="education-book-up__btn btn-lg">Забронировать место!</button>
+</div>
+</div>
+	</div>
+
+	<div class="feedback">
+		<div class="container">
+			<div class="feedback__wrapper">
+					<h2 class="feedback__title">Отзывы наших учеников</h2>
+					<div class="feedback-item">
+							<div class="feedback__slider-wrapper">
+									<div class="feedback__first-slider">
+						<div class="feedback-item__img">
+						<img src="img/feedback/feedback-first.png" alt="girl">
+					</div>
+					<div class="feedback-item__descr">
+							<p class="feedback-item__name">Ольга Фролова</p>
+							<p class="feedback-item__years">23 года. Москва</p>
+							<p class="feedback-items__descr">В общем учился сам и потихоньку сливал депозит. В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и предложил беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно заработать в три раза больше чем сумма на которую я пополнюсь.</p>
+							<p class="feedback-items__descr">Я взял кредитную карту в банке и перевел все средства 300 000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере</p>
+						</div>
+				</div>
+
+				<div class="feedback__second-slider">
+					<div class="feedback-item__img">
+							<img src="img/feedback/feedback-first.png" alt="girl">
+						</div>
+						<div class="feedback-item__descr">
+							<p class="feedback-item__name">Ольга Фролова</p>
+							<p class="feedback-item__years">23 года. Москва</p>
+							<p class="feedback-items__descr">В общем учился сам и потихоньку сливал депозит. В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и предложил беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно заработать в три раза больше чем сумма на которую я пополнюсь.</p>
+							<p class="feedback-items__descr">Я взял кредитную карту в банке и перевел все средства 300 000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере</p>
+						</div>
+					</div>
+				</div>
+					<button class="feedback__btn btn-lg">Оставить отзыв</button>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="services">
+		<div class="container">
+			<h2 class="services__title">Другие наши услуги</h2>
+			<div class="services__wrapper">
+				<div class="services__item">
+					<div class="services__item-img">
+						<img src="img/services/services-first.png" alt="image">
+						<div class="services__item-descr">
+							<h3 class="services__item-title">Инвестиции</h3>
+							<p class="services__item-text">Мы составим для Вас персональный финансовый план по инвестированию</p>
+							<button class="services__item-btn btn-md">Узнать</button>
+						</div>
+					</div>
+				</div>
+				<div class="services__item">
+					<div class="services__item-img">
+						<img src="img/services/services-second.png" alt="image">
+						<div class="services__item-descr">
+							<h3 class="services__item-title">Доверительное управление</h3>
+							<p class="services__item-text">Профессиональные трейдеры компании готовы управлять Вашими финансами</p>
+							<button class="services__item-btn btn-md">Узнать</button>
+						</div>
+					</div>
+				</div>
+				<div class="services__item">
+					<div class="services__item-img">
+						<img src="img/services/services-third.png" alt="image">
+						<div class="services__item-descr">
+							<h3 class="services__item-title">Рынки криптовалюты</h3>
+							<p class="services__item-text">Обучение торговли и управление финансами и торговлей на рынках криптовалюты и ICO</p>
+							<button class="services__item-btn btn-md">Узнать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
 </body>
-</html>
+<script src="js/libs.min.js"></script>
+<script>
+	$(document).ready(function(){
+			$('.feedback__slider-wrapper').slick({
+				slidesToShow: 1,
+				arrows: true,
+  		slidesToScroll: 1,
+				prevArrow:'<div class="arrow-left"></div>',
+    nextArrow:'<div class="arrow-right"></div>',
+				draggable: false
+				});
+	});
+</script>
+</html>	

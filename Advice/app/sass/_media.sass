@@ -1,3 +1,12 @@
+@media(max-width: 1200px)
+	.about__wrapper
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+	.about__wrapper-img
+		justify-content: center
+		margin-bottom: 40px
 @media (max-width: 992px)
 	.header .nav, .nav__first-block, .nav__second-block
 		padding-top: 15px
@@ -25,10 +34,95 @@
 		font-size: 14px
 	.header-main__form-title
 		font-size: 19px
-	.header-main__form-subtitle
+	.header-main__form-subtitle, .advantages__subtitle
 		font-size: 15px
+ .main .advantages__items-wrapper .advantages__item
+		margin-bottom: 60px
 
- @media (max-width: 768px)
-		.nav__second-block
-			display: none
-// @media (max-width: 576px)
+
+@media (max-width: 768px)
+	.header
+		padding-bottom: 110px
+ .header .nav, .nav__first-block, .nav__second-block
+	 display: flex
+	 justify-content: center
+	.nav__second-block, .header-main__text-title span, .header-main__text-subtitle, .header-main__btn
+		display: none
+	.header-main
+		margin-top: 50px
+	 &__text
+	  &-title
+		  padding-bottom: 70px
+	.header-main
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	
+	.about
+		padding-bottom: 40px
+		padding-top: 50px
+	.title
+		font-size: 16px
+	.about__descr
+		font-size: 16px
+ .about__video
+		display: none
+	.about__wrapper-img
+		display: block
+	.about__title
+		margin-bottom: 40px
+
+	.education__items-wrapper
+		flex-direction: column
+		align-items: center
+	.education-item:not(:last-child)
+		margin: 0px
+		margin-bottom: 20px
+	
+ .education-book-up
+		&__wrapper
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			text-align: center
+		&__descr
+			margin-right: 0px
+			margin-bottom: 15px
+
+@media (max-width: 576px)
+	.nav__descr
+		display: none
+	.header-main__text-title
+		font-size: 33px
+		text-align: center
+	.header-main__form
+		padding-left: 20px
+		padding-right: 20px
+		& label img
+			left: 28px
+			margin-top: 13px
+			width: 15px
+	.header-main__form input
+		padding: 15px 60px 15px 30px
+	.header-main__form-btn
+		width: 201px
+	.btn-lg
+		font-size: 12px
+	.header-main__form-btn::before, .header-main__form-btn::after
+		width: 40px
+	.header-main__form-btn::before
+		left: -49px
+	.header-main__form-btn::after
+		right: -50px
+	
+	.advantages__items-wrapper
+		display: flex
+		align-items: center
+		flex-direction: column
+	.main .advantages__items-wrapper .advantages__item
+		margin-bottom: 25px
+
+	.education-item
+		width: 80%
+

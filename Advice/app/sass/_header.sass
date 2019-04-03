@@ -1,6 +1,6 @@
 .header
 	width: 100%
-	min-height: 780px
+ padding-bottom: 150px
 	position: relative
 	background-image: url(../img/header/header-bg.png)
 	background-repeat: no-repeat
@@ -97,7 +97,10 @@
 				left: 40px
 				right: 90px
 			border-radius: 50px
-
+		& label img
+			position: absolute
+			margin-top: 13px
+			left: 42px
 .header-main__form-btn
 	position: absolute
 	margin-top: 10px
@@ -123,3 +126,14 @@
 		width: 50px
 		height: 1px
 		background-color: white
+
+.arrow-bottom
+	display: block
+	position: absolute
+	top: 92%
+	left: 50%
+	width: 20px
+	height: 20px
+	border-left: 1px solid white
+	border-bottom: 1px solid white
+	transform: translateX(-50%) rotate(-45deg)

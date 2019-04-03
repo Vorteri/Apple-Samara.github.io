@@ -30,7 +30,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/libs/jquery.min.js' // Берем jQuery, через кому писати які файли збирати до купи
+		'app/libs/jquery.min.js',
+	 'app/libs/slick.min.js' // Берем jQuery, через кому писати які файли збирати до купи
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
