@@ -76,6 +76,10 @@
 			top: 1px solid white
 			left: 1px solid white
 			right: 1px solid white
+		background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+		background-size: 55px 2px, 55px 2px
+		background-repeat: no-repeat, no-repeat
+		background-position: left bottom, right bottom
 		&-title
 		 font-family: "Proxima Nova Bol", sans-serif
 			text-transform: uppercase
@@ -83,7 +87,7 @@
 			font-weight: 700
 			margin-bottom: 15px
 		&-subtitle
-			font-family: "Proxima Nova Lt"
+			font-family: "Proxima Nova Lt", sans-serif
 			font-size: 16px
 			font-weight: 400
 			line-height: 21px
@@ -109,24 +113,6 @@
 .header-main__form-btn
 	position: relative
 	top: 50px
-	&::before
-		content: ""
-		display: block
-		position: absolute
-		top: 25px
-		left: -60px
-		width: 50px
-		height: 1px
-		background-color: white
-	&::after
-		content: ""
-		display: block
-		position: absolute
-		top: 25px
-		right: -60px
-		width: 50px
-		height: 1px
-		background-color: white
 
 .arrow-bottom
 	display: block

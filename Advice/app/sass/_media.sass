@@ -16,8 +16,10 @@
 		&:not(:last-child)
 			margin-bottom: 20px
 			margin-right: 0px
+
+
 @media (max-width: 992px)
-	.header .nav, .nav__first-block, .nav__second-block
+	.header, .nav, .nav__first-block, .nav__second-block
 		padding-top: 15px
 		justify-content: space-between
 	.nav__logo
@@ -54,11 +56,13 @@
 	.contacts__wrapper
 		justify-content: center
 		align-items: center
+	.map
+		margin: 0 auto
 
 @media (max-width: 768px)
 	.header
 		padding-bottom: 110px
- .header .nav, .nav__first-block, .nav__second-block
+ .header, .nav, .nav__first-block, .nav__second-block
 	 display: flex
 	 justify-content: center
 	.nav__second-block, .header-main__text-title span, .header-main__text-subtitle, .header-main__btn
@@ -108,9 +112,6 @@
 	.questions .questions__input-wrapper label:first-child input
 		margin-bottom: 20px
 
-	.header-main__form-btn::before
-		top: 23px
-
 @media (max-width: 576px)
 	.nav__descr
 		display: none
@@ -129,15 +130,11 @@
 	.header-main__form input
 		padding: 15px 60px 15px 30px
 	.header-main__form-btn
-		width: 201px
+		width: 150px
+		padding: 15px 0px
+		top: 40px
 	.btn-lg
 		font-size: 12px
-	.header-main__form-btn::before, .header-main__form-btn::after
-		width: 25px
-	.header-main__form-btn::before
-		left: -40px
-	.header-main__form-btn::after
-		right: -40px
 	
 	.advantages__items-wrapper
 		display: flex
