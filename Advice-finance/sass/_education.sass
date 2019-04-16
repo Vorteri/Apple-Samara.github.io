@@ -1,0 +1,84 @@
+.education
+	padding-top: 70px
+	padding-bottom: 70px
+	&__title
+		margin-bottom: 60px
+	&__items-wrapper
+		display: flex
+		justify-content: center
+		text-align: center
+	&-item
+		width: 360px
+		height: 188px
+		padding-top: 35px
+		border: 1px solid #eeedee
+	&-item:not(:last-child)
+		margin-right: 30px
+	&-item__number
+		display: inline-block
+		color: #fff
+		font-family: "Proxima Nova Rg"
+		text-align: center
+		font-size: 24px
+		font-weight: 400
+		line-height: 28px
+		width: 86px
+		height: 86px
+		border-radius: 80px
+		background-image: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%)
+		& p
+			transform: translateY(100%)
+	&-item > p
+		color: #5b5b5b
+		font-family: "Proxima Nova Lt"
+		font-size: 16px
+		font-weight: 300
+		line-height: 22.14px
+		margin-top: 15px
+	&__certificate
+		margin-top: 45px
+		text-align: center
+		& img
+			border: 1px solid #eeedee
+		& p 
+			color: #5b5b5b
+			font-family: "Proxima Nova Lt"
+			font-size: 18px
+			font-weight: 700
+			line-height: 28px
+			margin-top: 30px
+
+	
+.education-book-up
+	background: url(../img/education/education-book-up.png)
+	height: 215px
+	width: 100%
+	display: flex
+	align-items: center
+	position: relative
+	color: #fff
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 0px
+		width: 100%
+		height: 100%
+		background: linear-gradient(90deg, rgba(26,126,188,0.9) 0%, rgba(70,96,192,0.9) 50%, rgba(116,68,191,0.9) 100%)
+		z-index: -1
+	&__wrapper
+		display: flex
+	&__descr
+		margin-right: 60px
+		margin-top: 6px
+	&__descr h3
+		font-family: "Proxima Nova Bol", sans-serif
+		font-size: 26px
+		font-weight: 400
+		line-height: 24px
+		text-transform: uppercase
+	&__descr p
+		font-family: "Proxima Nova Lt", sans-serif
+		font-size: 18px
+		font-weight: 300
+		line-height: 28px
