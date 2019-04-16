@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 	<meta name="theme-color" content="#202020">
 	<title>Advice</title>
 </head>
@@ -34,7 +35,7 @@
 					<p>Есть вопросы?</p>
 					<p>+7 495 222 20 92</p>
 			</div>
-			<button class="nav__btn btn-sm">Перезвоните мне!</button>
+			<button class="nav__btn btn-sm popup-call-order">Перезвоните мне!</button>
 		</div>
 	</nav>
 
@@ -46,7 +47,7 @@
 				</h1>
 				<p class="header-main__text-subtitle">
 						Мы бесплатно научим Вас как всего за 10 часов начать зарабатывать от 100 000<br> рублей в месяц под строгим контролем профессионалов.			</p>
-					<button class="header-main__btn btn-md">Начать зарабатывать!</button>
+					<button class="header-main__btn btn-md popup__earn-money">Начать зарабатывать!</button>
 				</div>
 	
 	
@@ -57,13 +58,13 @@
 					<input id="post-name" type="text" placeholder="Ваше имя">
 				</label>
 				<label for="post-phone">
-					<input id="post-phone" type="text" placeholder="Ваш номер телефона">
+					<input id="post-phone" class="post-phone" type="text" placeholder="Ваш номер телефона">
 				</label>
 			<button class="header-main__form-btn btn-lg">Получить материалы</button>
 			</form>
 		</section>
 	
-		<a href="#"><div class="arrow-bottom"></div></a>
+		<a href="#about"><div class="arrow-bottom"></div></a>
 	</div>		
 
 
@@ -73,7 +74,7 @@
 <main class="main">
 
 
-<section class="about">
+<section class="about" id="about">
 	<div class="container">
 		<div class="about__title title">
 				<h2>О нашей компании</h2>
@@ -151,7 +152,7 @@
 						</div>
 			</div>
 
-			<button class="btn-lg">Получить консультацию о курсе</button>
+			<button class="btn-lg popup__advice">Получить консультацию о курсе</button>
 </div>
 </section>
 
@@ -179,7 +180,9 @@
 		</div>
 
 		<div class="education__certificate">
-			<img src="img/education/certificate.png" alt="certificate">
+				<a href="img/education/certificate_b.jpg" data-fancybox data-caption="">
+					<img src="img/education/certificate.png" alt="certificate">
+		</a>
 			<p>Так же по окончанию обучения Вы получите сертификат о прохождении курса и доступ<br>
 				к закрытой рассылке трейдеров по аналитике и инсайтам.</p>
 		</div>
@@ -193,7 +196,7 @@
 			<h3 class="education-book-up__title">Набор группы уже идет</h3>
 			<p class="education-book-up__subtitle">Успейте забронировать место в группе!</p>
 	</div>
-	<button class="education-book-up__btn btn-lg">Забронировать место!</button>
+	<button class="education-book-up__btn btn-lg popup__book-up">Забронировать место!</button>
 </div>
 </div>
 	</section>
@@ -228,7 +231,7 @@
 						</div>
 					</div>
 				</div>
-					<button class="feedback__btn btn-lg">Оставить отзыв</button>
+					<button class="feedback__btn btn-lg popup__feedback">Оставить отзыв</button>
 					</div>
 			</div>
 		</div>
@@ -245,7 +248,7 @@
 						<div class="services__item-descr">
 							<h3 class="services__item-title">Инвестиции</h3>
 							<p class="services__item-text">Мы составим для Вас персональный<br> финансовый план по<br> инвестированию</p>
-							<button class="services__item-btn btn-md">Узнать</button>
+							<button class="services__item-btn btn-md popup-call-order">Узнать</button>
 						</div>
 				</div>
 				<div class="services__item">
@@ -255,7 +258,7 @@
 						<div class="services__item-descr">
 							<h3 class="services__item-title">Доверительное управление</h3>
 							<p class="services__item-text">Профессиональные трейдеры компании<br> готовы управлять Вашими<br> финансами</p>
-							<button class="services__item-btn btn-md">Узнать</button>
+							<button class="services__item-btn btn-md popup-call-order">Узнать</button>
 						</div>
 				</div>
 				<div class="services__item">
@@ -265,7 +268,7 @@
 						<div class="services__item-descr">
 							<h3 class="services__item-title">Рынки криптовалюты</h3>
 							<p class="services__item-text">Обучение торговли и управление<br> финансами и торговлей на рынках<br> криптовалюты и ICO</p>
-							<button class="services__item-btn btn-md">Узнать</button>
+							<button class="services__item-btn btn-md popup-call-order">Узнать</button>
 						</div>
 				</div>
 			</div>
@@ -308,7 +311,7 @@
 						</div>
 
 						<p>Или оставьте заявку на звонок</p>
-						<button class="btn-lg btn__contacts">Заказать звонок</button>
+						<button class="btn-lg btn__contacts popup-call-order">Заказать звонок</button>
 				</div>
 			</div>
 			</div>
@@ -331,7 +334,7 @@
 							<p>Есть вопросы?</p>
 							<p>+7 495 222 20 92</p>
 					</div>
-					<button class="nav__btn btn-sm">Перезвоните мне!</button>
+					<button class="nav__btn btn-sm popup-call-order">Перезвоните мне!</button>
 				</div>
 			</nav>
 		</div>
@@ -339,10 +342,10 @@
 		<p>© www.advice.ru 2008-2017. Все права защищены.</p>	
 		</div>
 </footer>
-
 <div class="popup">
 	<div class="container">
 			<form class="popup__form" action="#">
+				<div class="popup__close"> &times;</div>
 					<h2 class="popup__title">Заказать звонок</h2>
 					<p class="popup__subtitle">Чтобы получить бесплатный пакет<br> материалов о финансовом рынке</p>
 					<label for="popup-name">
@@ -358,16 +361,7 @@
 
 </body>
 <script src="js/libs.min.js"></script>
-<script>
-	$(document).ready(function(){
-			$('.feedback__slider-wrapper').slick({
-				slidesToShow: 1,
-				arrows: true,
-  		slidesToScroll: 1,
-				prevArrow:'<div class="arrow-left"></div>',
-    nextArrow:'<div class="arrow-right"></div>',
-				draggable: false
-				});
-	});
-</script>
+<script src="js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 </html>	

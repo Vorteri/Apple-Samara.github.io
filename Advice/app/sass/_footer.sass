@@ -34,14 +34,20 @@
 		padding-top: 30px
 		line-height: 17px
 
+
 .popup
 	display: flex
 	justify-content: center
-	position: relative
 	align-items: center
-	flex-direction: column
-	width: 100vw
-	height: 100vh
+ transition: opacity 0.5s ease-out
+	position: fixed
+	visibility: hidden
+	opacity: 0
+	z-index: 100
+	top: 0px
+	width: 100%
+	height: 100%
+
 	&::before
 		content: ''
 		display: block
@@ -49,9 +55,19 @@
 		top: 0px
 		width: 100%
 		height: 100%
-		background: linear-gradient(90deg, rgba(26,126,188,0.9) 0%, rgba(70,96,192,0.9) 50%, rgba(116,68,191,0.9) 100%)
+		background: linear-gradient(90deg, rgba(26,126,188,1) 0%, rgba(70,96,192,1) 50%, rgba(116,68,191,1) 100%)
 		z-index: -1
+	&__close
+		position: absolute
+		right: 15px
+		top: 10px
+		font-size: 26px
+		cursor: pointer
 	&__form
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
 		text-align: center
 		color: #ffffff
 		position: relative
@@ -89,7 +105,13 @@
 		border-radius: 50px
 #popup-phone
 	margin-top: 10px
-
+	background-image: url(../img/header/phone.png)
+	background-repeat: no-repeat
+	background-position: 5%
+#popup-name
+	background-image: url(../img/header/user.png)
+	background-repeat: no-repeat
+	background-position: 5%
 .popup__btn
 	position: relative
 	top: 50px

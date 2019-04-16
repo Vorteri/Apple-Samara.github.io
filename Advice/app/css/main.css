@@ -304,6 +304,8 @@ input {
   .about__descr {
     font-size: 18px;
     font-weight: 300;
+    max-width: 400px;
+    margin: 0 auto;
     line-height: 28px;
     font-family: "Proxima Nova Lt", sans-serif;
     color: #202020; }
@@ -804,18 +806,20 @@ input {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100vw;
-  height: 100vh; }
+  -webkit-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+  top: 0px;
+  width: 100%;
+  height: 100%; }
   .popup::before {
     content: '';
     display: block;
@@ -823,12 +827,35 @@ input {
     top: 0px;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(26, 126, 188, 0.9)), color-stop(50%, rgba(70, 96, 192, 0.9)), to(rgba(116, 68, 191, 0.9)));
-    background: -webkit-linear-gradient(left, rgba(26, 126, 188, 0.9) 0%, rgba(70, 96, 192, 0.9) 50%, rgba(116, 68, 191, 0.9) 100%);
-    background: -o-linear-gradient(left, rgba(26, 126, 188, 0.9) 0%, rgba(70, 96, 192, 0.9) 50%, rgba(116, 68, 191, 0.9) 100%);
-    background: linear-gradient(90deg, rgba(26, 126, 188, 0.9) 0%, rgba(70, 96, 192, 0.9) 50%, rgba(116, 68, 191, 0.9) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#1a7ebc), color-stop(50%, #4660c0), to(#7444bf));
+    background: -webkit-linear-gradient(left, #1a7ebc 0%, #4660c0 50%, #7444bf 100%);
+    background: -o-linear-gradient(left, #1a7ebc 0%, #4660c0 50%, #7444bf 100%);
+    background: linear-gradient(90deg, #1a7ebc 0%, #4660c0 50%, #7444bf 100%);
     z-index: -1; }
+  .popup__close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 26px;
+    cursor: pointer; }
   .popup__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     color: #ffffff;
     position: relative;
@@ -868,7 +895,15 @@ input {
             border-radius: 50px; }
 
 #popup-phone {
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-image: url(../img/header/phone.png);
+  background-repeat: no-repeat;
+  background-position: 5%; }
+
+#popup-name {
+  background-image: url(../img/header/user.png);
+  background-repeat: no-repeat;
+  background-position: 5%; }
 
 .popup__btn {
   position: relative;
@@ -1053,20 +1088,20 @@ input {
   .header-main__text-title {
     font-size: 33px;
     text-align: center; }
-  .header-main__form {
+  .header-main__form, .popup__form {
     padding-left: 20px;
     padding-right: 20px; }
-    .header-main__form #post-name {
-      -webkit-background-size: 16px 17px;
-              background-size: 16px 17px;
-      background-position: 4%; }
-    .header-main__form #post-phone {
-      -webkit-background-size: 16px 20px;
-              background-size: 16px 20px;
-      background-position: 5%; }
-  .header-main__form input {
+  #post-name, #popup-name {
+    -webkit-background-size: 16px 17px;
+            background-size: 16px 17px;
+    background-position: 4%; }
+  #post-phone, #popup-phone {
+    -webkit-background-size: 16px 20px;
+            background-size: 16px 20px;
+    background-position: 5%; }
+  .header-main__form input, .popup input {
     padding: 15px 60px 15px 30px; }
-  .header-main__form-btn {
+  .header-main__form-btn, .popup__btn {
     width: 150px;
     padding: 15px 0px;
     top: 40px; }
