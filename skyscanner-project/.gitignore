@@ -1,0 +1,9 @@
+/node_modules/
+/#src/
+/.git/
+/gulpfile.js/
+/package.json/
+/ht.access/
+/**/Thumbs.db
+/**/*.DS_Store
+/**/package-lock.json
