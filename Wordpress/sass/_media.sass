@@ -1,0 +1,98 @@
+@media (max-width: 1200px)
+	.homepage__title 
+		font-size: 26px
+	.homepage__subtitle
+		font-size: 43px
+	.homepage__descr
+		font-size: 18px
+	.homepage__btn
+		margin-top:  30px
+	.advantages__img img
+		width: 190px
+		height: 120px
+	.education
+		margin-top: 50px
+		& .row:nth-child(2)
+		 margin-top: 50px
+		&__item
+	 	margin-top: 20px
+	 &__stick
+		 display: none
+	.optimization
+  position: relative
+  &:before
+		 content: ''
+		 position: absolute
+		 top: 0
+		 width: 100%
+		 height: 100%
+		 z-index: 0
+		 background-color: rgba(0, 0, 0, 0.7)
+		&__descr
+		 margin-left: 0px
+		 text-align: center
+		&__text
+		 color: #fff
+		 font-size: 15px
+
+
+@media (max-width: 768px)
+	.header
+		&__wrapper
+			height: 100%
+	.homepage
+		padding-bottom: 70px
+ .homepage__arrow-wrapper, .homepage__subtitle::before, .homepage__subtitle::after
+  display: none
+ .homepage__title
+  font-size: 29px
+ .homepage__subtitle
+  font-size: 45px
+ .homepage__descr
+  font-size: 16px
+ .btn
+  padding: 20px
+  font-size: 12px
+ .advantages__title
+	 font-size: 25px
+ .advantages__subtitle
+  font-size: 16px
+ .optimization__text
+	 font-size: 18px
+	 line-height: 20px
+  font-weight: 300
+ .optimization__title
+  font-size: 24px
+
+
+@media (max-width: 576px)
+	.homepage__title
+  font-size: 22px
+	.homepage__subtitle
+		font-size: 40px
+ .advantages__title
+	 line-height: 30px
+	 &:before
+			top: 110%
+	.time
+		text-align: center
+	 &__title
+			font-size: 19px
+		& p
+			font-size: 21px
+			line-height: 23px
+	 & small
+			padding-top: 10px
+	.footer__descr a:nth-child(2)
+		display: block
+	.footer__spec-symbol
+		display: none
+
+@media (max-height: 600px)
+ .homepage__arrow-wrapper
+ 	display: none
+	.homepage
+		padding-bottom: 70px
+	.header
+		&__wrapper
+			height: 100%
